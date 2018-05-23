@@ -1,0 +1,33 @@
+.sidebar-category-nav {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(#000, 0.1);
+}
+
+.sidebar-category-nav__list {
+  @include clear-list();
+}
+
+.sidebar-category-nav__item {
+
+}
+
+.sidebar-category-nav__link {
+  display: block;
+  padding: 10px 16px;
+  font-weight: 700;
+  font-size: rem(17);
+  line-height: 1.2;
+  text-decoration: none;
+  color: $base-color;
+  transition: $duration;
+
+  &:hover,
+  &:focus {
+    // color: #ffffff;
+    // background-color: #3F51B5;
+    color: #3F51B5;
+    background-color: rgba(#000, 0.04);
+  }
+}
