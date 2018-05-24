@@ -2237,9 +2237,28 @@ ul:not([class]) li::before {
   }
 }
 
+.catalog-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .catalog-card__wraplink {
   position: relative;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   text-decoration: none;
   color: #232020;
   border-radius: 2px;
@@ -2249,8 +2268,7 @@ ul:not([class]) li::before {
 }
 
 .catalog-card__wraplink:hover, .catalog-card__wraplink:focus {
-  color: #fff;
-  color: #232020;
+  color: #3F51B5;
   -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
           box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
@@ -2259,6 +2277,8 @@ ul:not([class]) li::before {
   position: relative;
   display: block;
   overflow: hidden;
+  -webkit-transition: 0.375s;
+  transition: 0.375s;
 }
 
 .catalog-card__imagebox::before {
@@ -2291,20 +2311,14 @@ ul:not([class]) li::before {
   }
 }
 
+.catalog-card__wraplink:hover .catalog-card__imagebox,
+.catalog-card__wraplink:focus .catalog-card__imagebox {
+  -webkit-filter: saturate(150%);
+          filter: saturate(150%);
+}
+
 .catalog-card__title {
-  left: 5px;
-  top: 5px;
-  right: 5px;
-  bottom: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: block;
   margin: 0;
   padding: 22px 10px;
   font-weight: 800;
@@ -2312,14 +2326,6 @@ ul:not([class]) li::before {
   line-height: 1.2;
   text-align: center;
   text-transform: uppercase;
-  -webkit-transition: 0.375s;
-  transition: 0.375s;
-}
-
-.catalog-card__wraplink:hover .catalog-card__title,
-.catalog-card__wraplink:focus .catalog-card__title {
-  color: #3F51B5;
-  background-color: rgba(0, 0, 0, 0.02);
 }
 
 .sidebar__module {
