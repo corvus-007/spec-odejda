@@ -15,9 +15,8 @@
 
 .sidebar-category-nav__link {
   display: block;
-  padding: 10px 16px;
+  padding: 10px 15px;
   font-weight: 700;
-  font-size: rem(17);
   line-height: 1.2;
   text-decoration: none;
   color: $base-color;
@@ -25,8 +24,6 @@
 
   &:hover,
   &:focus {
-    // color: #ffffff;
-    // background-color: #3F51B5;
     color: #3F51B5;
     background-color: rgba(#000, 0.04);
   }

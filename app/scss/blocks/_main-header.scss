@@ -1,6 +1,6 @@
 .main-header {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   background-color: #e0e0e0;
 }
 
@@ -11,5 +11,23 @@
 }
 
 .main-header__logo {
+
+}
+
+.main-header__logo {
+  margin-right: $gutter * 2;
+}
+
+.main-header__contacts {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-header__search {
+  margin-left: $gutter * 2;
+  margin-right: $gutter * 2;
+}
+
+.main-header__controls {
 
 }
