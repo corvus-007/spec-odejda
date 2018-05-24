@@ -1,0 +1,41 @@
+.user-list {
+  @include clear-list();
+
+  display: flex;
+  align-items: center;
+}
+
+.user-list__item {
+  margin-right: 8px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.user-list__button {
+  padding: 10px;
+  font-size: 0;
+  background: none;
+  color: $base-color;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  transition: $duration;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.user-list__icon {
+  display: block;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  fill: currentColor;
+  background-color: currentColor;
+  border-radius: 50%;
+}

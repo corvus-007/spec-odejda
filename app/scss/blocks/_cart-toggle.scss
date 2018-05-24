@@ -1,0 +1,20 @@
+.cart-toggle {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.cart-toggle__amount {
+
+}
+
+.cart-toggle__icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+  flex-shrink: 0;
+  fill: currentColor;
+  background-color: currentColor;
+  border-radius: 50%;
+}

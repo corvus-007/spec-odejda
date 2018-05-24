@@ -1,0 +1,12 @@
+.header-controls {
+  display: flex;
+  align-items: center;
+}
+
+.header-controls__item {
+  margin-right: 20px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

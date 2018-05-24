@@ -1,3 +1,5 @@
+// 1. Дублирую правили, потому что в IE и Edge не работает выпадашка при перечислении селекторов вместе с :focus-widthin
+
 .main-nav {
   background-color: #3F51B5;
 }
@@ -42,9 +44,17 @@
   }
 
   .main-nav__item:hover &,
-  .main-nav__item:focus-within &,
   &:hover,
   &:focus {
+    color: #ffffff;
+    background-color: rgba(#000000, 0.2);
+
+    &::after {
+      opacity: 1;
+    }
+  }
+
+  .main-nav__item:focus-within & { // 1.
     color: #ffffff;
     background-color: rgba(#000000, 0.2);
 
@@ -63,8 +73,13 @@
   opacity: 0;
   transition: $duration * 1.5;
 
-  .main-nav__item:hover &,
-  .main-nav__item:focus-within & {
+  .main-nav__item:hover & {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .main-nav__item:focus-within & { // 1.
     opacity: 1;
     transform: translateY(0);
     pointer-events: auto;

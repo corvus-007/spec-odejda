@@ -15,5 +15,6 @@
 .main-layout__sidebar {
   width: 270px;
   margin-right: $gutter;
+  margin-bottom: -$gutter;
   flex-shrink: 0;
 }

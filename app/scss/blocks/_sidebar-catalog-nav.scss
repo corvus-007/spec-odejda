@@ -1,11 +1,11 @@
+// 1. Дублирую правили, потому что в IE и Edge не работает выпадашка при перечислении селекторов вместе с :focus-widthin
+
 .sidebar-catalog-nav {
   position: relative;
-  background-color: #ffffff;
 }
 
 .sidebar-catalog-nav__list {
   @include clear-list();
-
 }
 
 .sidebar-catalog-nav__item {
@@ -13,8 +13,11 @@
 }
 
 .sidebar-catalog-nav__link {
-  display: block;
-  padding: 12px 16px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  padding-right: 40px;
   font-weight: 700;
   font-size: rem(17);
   line-height: 1.2;
@@ -23,13 +26,47 @@
   color: $base-color;
   transition: $duration;
 
+  .sidebar-catalog-nav__item--has-dropdown & {
+    &::after {
+      content: "";
+      position: absolute;
+      right: 15px;
+      top: 0;
+      bottom: 0;
+      width: 8px;
+      height: 8px;
+      margin: auto;
+      border: 2px solid;
+      // border-radius: 3px;
+      border-left: none;
+      border-top: none;
+      box-sizing: border-box;
+      opacity: 0.3;
+      transform: rotate(-45deg);
+    }
+  }
+
   .sidebar-catalog-nav__item:hover &,
-  .sidebar-catalog-nav__item:focus-within &,
   &:hover,
   &:focus {
     color: #3F51B5;
     background-color: rgba(#000, 0.04);
   }
+
+  .sidebar-catalog-nav__item:focus-within & { // 1.
+    color: #3F51B5;
+    background-color: rgba(#000, 0.04);
+  }
+}
+
+.sidebar-catalog-nav__icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  flex-shrink: 0;
+  fill: currentColor;
+  background-color: currentColor;
+  border-radius: 50%;
 }
 
 .sidebar-catalog-nav__dropdown {
@@ -41,8 +78,12 @@
   pointer-events: none;
   opacity: 0;
 
-  .sidebar-catalog-nav__item:hover &,
-  .sidebar-catalog-nav__item:focus-within & {
+  .sidebar-catalog-nav__item:hover & {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .sidebar-catalog-nav__item:focus-within & { // 1.
     opacity: 1;
     pointer-events: auto;
   }

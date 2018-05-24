@@ -1,0 +1,29 @@
+.header-contacts {
+  @include clear-list();
+}
+
+.header-contacts__item {
+
+}
+
+.header-contacts__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: $base-color;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.header-contacts__icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  flex-shrink: 0;
+  fill: currentColor;
+  background-color: currentColor;
+  border-radius: 50%;
+}
