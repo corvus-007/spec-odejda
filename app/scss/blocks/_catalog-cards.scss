@@ -1,0 +1,28 @@
+.catalog-cards {
+  @include clear-list();
+
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -$gutter
+}
+
+.catalog-cards__item {
+  width: 100%;
+  margin-bottom: $gutter;
+
+  @include mq-range(568px, 767px) {
+    @include calc-column-width(2);
+  }
+
+  @include mq-range(768px, 959px) {
+    width: 100%;
+  }
+
+  @include mq-range(960px, 1279px) {
+    @include calc-column-width(2);
+  }
+
+  @include mq-min(1280px) {
+    @include calc-column-width(3);
+  }
+}

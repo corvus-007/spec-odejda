@@ -1,0 +1,47 @@
+.catalog-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog-card__wraplink {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  text-decoration: none;
+  color: $base-color;
+  border-radius: 2px;
+  overflow: hidden;
+  transition: $duration * 1.5;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    box-shadow: 0 2px 8px rgba(#000, 0.2);
+  }
+}
+
+.catalog-card__imagebox {
+  @include make-fit-object(300, 220);
+  transition: $duration * 1.5;
+
+  .catalog-card__wraplink:hover &,
+  .catalog-card__wraplink:focus & {
+    filter: saturate(150%) contrast(110%);
+  }
+}
+
+.catalog-card__image {
+
+}
+
+.catalog-card__title {
+  display: block;
+  margin: 0;
+  padding: 22px 10px;
+  font-weight: 800;
+  font-size: rem(18);
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+}
