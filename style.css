@@ -2227,13 +2227,13 @@ ul:not([class]) li::before {
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 959px) {
   .catalog-cards__item {
     width: 100%;
   }
 }
 
-@media (min-width: 992px) and (max-width: 1279px) {
+@media (min-width: 960px) and (max-width: 1279px) {
   .catalog-cards__item {
     width: calc((100% - 30px * 1 - 0.01px) / 2);
     margin-right: 30px;
