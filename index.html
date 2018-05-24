@@ -41,16 +41,34 @@
             <svg class="header-search__submit-icon" width="16" height="16">
               <use xlink:href=""></use>
             </svg>
+            <span class="visually-hidden">Поиск</span>
           </button>
         </form>
         <div class="main-header__controls header-controls">
-          <ul class="header-controls__item user-list"></ul>
+          <ul class="header-controls__item user-list">
+            <li class="user-list__item">
+              <button class="user-list__button" type="button">
+                <svg class="user-list__icon" width="28" height="28">
+                  <use xlink:href="images/symbols.svg#user"></use>
+                </svg>
+                <span class="visually-hidden">Войти</span>
+              </button>
+            </li>
+            <li class="user-list__item">
+              <button class="user-list__button" type="button">
+                <svg class="user-list__icon" width="28" height="28">
+                  <use xlink:href="images/symbols.svg#logout"></use>
+                </svg>
+                <span class="visually-hidden">Выйти</span>
+              </button>
+            </li>
+          </ul>
           <a class="header-controls__item cart-toggle" href="cart.html">
             <svg class="cart-toggle__icon" width="16" height="16">
               <use xlink:href=""></use>
             </svg>
-            <span class="cart-toggle__badge">2</span>
-            <span class="cart-toggle__text">товара в корзине</span>
+            <span class="visually-hidden">товара в корзине</span>
+            <span class="cart-toggle__amount">2</span>
           </a>
         </div>
       </div>
@@ -129,37 +147,28 @@
             <div class="main-nav__dropdown subnav">
               <ul class="subnav__list">
                 <li class="subnav__item">
-                  <a href="" class="subnav__link">Нанесение логотипа</a>
+                  <a href="" class="subnav__link">Материалы и технологии</a>
                 </li>
                 <li class="subnav__item">
-                  <a href="" class="subnav__link">Услуги</a>
+                  <a href="" class="subnav__link">Условные обозначения</a>
                 </li>
                 <li class="subnav__item">
-                  <a href="" class="subnav__link">Как купить?</a>
+                  <a href="" class="subnav__link">Схема районирования РФ</a>
                 </li>
                 <li class="subnav__item">
-                  <a href="" class="subnav__link">Доставка</a>
+                  <a href="" class="subnav__link">Таблица размеров</a>
                 </li>
                 <li class="subnav__item">
-                  <a href="" class="subnav__link">Система скидок</a>
+                  <a href="" class="subnav__link">Частые вопросы</a>
                 </li>
                 <li class="subnav__item">
-                  <a href="" class="subnav__link">Клуб партнеров ГК</a>
+                  <a href="" class="subnav__link">Классификация СИЗ</a>
                 </li>
                 <li class="subnav__item">
-                  <a href="" class="subnav__link">Каталог за бонусы</a>
+                  <a href="" class="subnav__link">Справочник покупателя</a>
                 </li>
                 <li class="subnav__item">
-                  <a href="" class="subnav__link">Скачать прайс-лист</a>
-                </li>
-                <li class="subnav__item">
-                  <a href="" class="subnav__link">Скачать каталоги в PDF</a>
-                </li>
-                <li class="subnav__item">
-                  <a href="" class="subnav__link">Заказать каталог</a>
-                </li>
-                <li class="subnav__item">
-                  <a href="" class="subnav__link">Акции</a>
+                  <a href="" class="subnav__link">Основные ТР ТС, ГОСТ и ТУ</a>
                 </li>
               </ul>
             </div>
@@ -175,14 +184,37 @@
     <div class="main-layout container">
       <div class="main-layout__row">
         <main class="main-layout__main main-content">
-          main_content
+          <section class="catalog">
+            <div class="common-header">
+              <h2 class="common-title">Каталог</h2>
+            </div>
+            <div class="common-body">
+              <ul>
+                <li><a href="">Спецодежда</a></li>
+                <li><a href="">Рабочая обувь</a></li>
+                <li><a href="">Средства индивидуальной защиты</a></li>
+                <li><a href="">Средства защиты рук</a></li>
+                <li><a href="">Хозяйственная группа</a></li>
+                <li><a href="">Распродажа</a></li>
+              </ul>
+            </div>
+          </section>
         </main>
+
+        <!-- Sidebar -->
         <aside class="main-layout__sidebar sidebar">
-          <nav class="sidebar__module sidebar-catalog-nav">
-            Каталог
+          <nav class="sidebar__module common-block sidebar-catalog-nav">
+            <div class="common-header">
+              <h2 class="common-title">Каталог</h2>
+            </div>
             <ul class="sidebar-catalog-nav__list">
               <li class="sidebar-catalog-nav__item sidebar-catalog-nav__item--has-dropdown">
-                <a class="sidebar-catalog-nav__link" href="">Спецодежда</a>
+                <a class="sidebar-catalog-nav__link" href="">
+                  <svg class="sidebar-catalog-nav__icon" width="16" height="16">
+                    <use xlink:href=""></use>
+                  </svg>
+                  Спецодежда
+                </a>
                 <div class="sidebar-catalog-nav__dropdown sidebar-category-nav">
                   <ul class="sidebar-category-nav__list">
                     <li class="sidebar-category-nav__item">
@@ -216,7 +248,12 @@
                 </div>
               </li>
               <li class="sidebar-catalog-nav__item sidebar-catalog-nav__item--has-dropdown">
-                <a class="sidebar-catalog-nav__link" href="">Рабочая обувь</a>
+                <a class="sidebar-catalog-nav__link" href="">
+                  <svg class="sidebar-catalog-nav__icon" width="16" height="16">
+                    <use xlink:href=""></use>
+                  </svg>
+                  Рабочая обувь
+                </a>
                 <div class="sidebar-catalog-nav__dropdown sidebar-category-nav">
                   <ul class="sidebar-category-nav__list">
                     <li class="sidebar-category-nav__item">
@@ -244,7 +281,12 @@
                 </div>
               </li>
               <li class="sidebar-catalog-nav__item sidebar-catalog-nav__item--has-dropdown">
-                <a class="sidebar-catalog-nav__link" href="">Средства индивидуальной защиты</a>
+                <a class="sidebar-catalog-nav__link" href="">
+                  <svg class="sidebar-catalog-nav__icon" width="16" height="16">
+                    <use xlink:href=""></use>
+                  </svg>
+                  Средства индивидуальной защиты
+                </a>
                 <div class="sidebar-catalog-nav__dropdown sidebar-category-nav">
                   <ul class="sidebar-category-nav__list">
                     <li class="sidebar-category-nav__item">
@@ -274,9 +316,105 @@
                   </ul>
                 </div>
               </li>
+              <li class="sidebar-catalog-nav__item sidebar-catalog-nav__item--has-dropdown">
+                <a class="sidebar-catalog-nav__link" href="">
+                  <svg class="sidebar-catalog-nav__icon" width="16" height="16">
+                    <use xlink:href=""></use>
+                  </svg>
+                  Средства защиты рук
+                </a>
+                <div class="sidebar-catalog-nav__dropdown sidebar-category-nav">
+                  <ul class="sidebar-category-nav__list">
+                    <li class="sidebar-category-nav__item">
+                      <a class="sidebar-category-nav__link" href="">Средства защиты рук - Manipula Specialist™</a>
+                    </li>
+                    <li class="sidebar-category-nav__item">
+                      <a class="sidebar-category-nav__link" href="">Перчатки трикотажные Спец-SB®</a>
+                    </li>
+                    <li class="sidebar-category-nav__item">
+                      <a class="sidebar-category-nav__link" href="">Перчатки трикотажные</a>
+                    </li>
+                    <li class="sidebar-category-nav__item">
+                      <a class="sidebar-category-nav__link" href="">Перчатки полушерстяные</a>
+                    </li>
+                    <li class="sidebar-category-nav__item">
+                      <a class="sidebar-category-nav__link" href="">Перчатки спилковые, комбинированные</a>
+                    </li>
+                    <li class="sidebar-category-nav__item">
+                      <a class="sidebar-category-nav__link" href="">Краги, вачеги</a>
+                    </li>
+                    <li class="sidebar-category-nav__item">
+                      <a class="sidebar-category-nav__link" href="">Перчатки специализированные</a>
+                    </li>
+                    <li class="sidebar-category-nav__item">
+                      <a class="sidebar-category-nav__link" href="">Перчатки хозяйственные, одноразовые</a>
+                    </li>
+                    <li class="sidebar-category-nav__item">
+                      <a class="sidebar-category-nav__link" href="">Рукавицы рабочие</a>
+                    </li>
+                    <li class="sidebar-category-nav__item">
+                      <a class="sidebar-category-nav__link" href="">Рукавицы утепленные</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="sidebar-catalog-nav__item sidebar-catalog-nav__item--has-dropdown">
+                <a class="sidebar-catalog-nav__link" href="">
+                  <svg class="sidebar-catalog-nav__icon" width="16" height="16">
+                    <use xlink:href=""></use>
+                  </svg>
+                  Хозяйственная группа
+                </a>
+                <div class="sidebar-catalog-nav__dropdown sidebar-category-nav">
+                  <ul class="sidebar-category-nav__list">
+                    <li class="sidebar-category-nav__item">
+                      <a class="sidebar-category-nav__link" href="">Технические ткани</a>
+                    </li>
+                    <li class="sidebar-category-nav__item">
+                      <a class="sidebar-category-nav__link" href="">Постельные принадлежности</a>
+                    </li>
+                    <li class="sidebar-category-nav__item">
+                      <a class="sidebar-category-nav__link" href="">Садово огородный инвентарь</a>
+                    </li>
+                    <li class="sidebar-category-nav__item">
+                      <a class="sidebar-category-nav__link" href="">Щетинно щеточные изделия</a>
+                    </li>
+                    <li class="sidebar-category-nav__item">
+                      <a class="sidebar-category-nav__link" href="">Моющие средства и бытовая химия</a>
+                    </li>
+                    <li class="sidebar-category-nav__item">
+                      <a class="sidebar-category-nav__link" href="">Медицинское имущество</a>
+                    </li>
+                    <li class="sidebar-category-nav__item">
+                      <a class="sidebar-category-nav__link" href="">Снегоуборочный инвентарь</a>
+                    </li>
+                    <li class="sidebar-category-nav__item">
+                      <a class="sidebar-category-nav__link" href="">Мебель для рабочих</a>
+                    </li>
+                    <li class="sidebar-category-nav__item">
+                      <a class="sidebar-category-nav__link" href="">Огнетушители</a>
+                    </li>
+                    <li class="sidebar-category-nav__item">
+                      <a class="sidebar-category-nav__link" href="">Ограждения</a>
+                    </li>
+                    <li class="sidebar-category-nav__item">
+                      <a class="sidebar-category-nav__link" href="">Хозяйственные товары</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="sidebar-catalog-nav__item">
+                <a class="sidebar-catalog-nav__link" href="">
+                  <svg class="sidebar-catalog-nav__icon" width="16" height="16">
+                    <use xlink:href=""></use>
+                  </svg>
+                  Распродажа
+                </a>
+              </li>
             </ul>
           </nav>
         </aside>
+
       </div>
     </div>
 
