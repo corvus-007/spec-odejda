@@ -48,12 +48,12 @@
   .sidebar-catalog-nav__item:hover &,
   &:hover,
   &:focus {
-    color: #3F51B5;
+    color: $accent-color;
     background-color: rgba(#000, 0.04);
   }
 
   .sidebar-catalog-nav__item:focus-within & { // 1.
-    color: #3F51B5;
+    color: $accent-color;
     background-color: rgba(#000, 0.04);
   }
 }

@@ -5,6 +5,11 @@
 
 .main-layout__row {
   display: flex;
+  flex-direction: column;
+
+  @include mq-min(768px) {
+    flex-direction: row;
+  }
 }
 
 .main-layout__main {
@@ -13,8 +18,10 @@
 }
 
 .main-layout__sidebar {
-  width: 270px;
-  margin-right: $gutter;
-  margin-bottom: -$gutter;
-  flex-shrink: 0;
+  @include mq-min(768px) {
+    width: 270px;
+    margin-right: $gutter;
+    margin-bottom: -$gutter;
+    flex-shrink: 0;
+  }
 }
