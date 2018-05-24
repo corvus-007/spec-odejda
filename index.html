@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="format-detection" content="telephone=no">
-  <title>Document</title>
+  <title>Главная — Спец_Одежда</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -189,13 +189,55 @@
               <h2 class="common-title">Каталог</h2>
             </div>
             <div class="common-body">
-              <ul>
-                <li><a href="">Спецодежда</a></li>
-                <li><a href="">Рабочая обувь</a></li>
-                <li><a href="">Средства индивидуальной защиты</a></li>
-                <li><a href="">Средства защиты рук</a></li>
-                <li><a href="">Хозяйственная группа</a></li>
-                <li><a href="">Распродажа</a></li>
+              <ul class="catalog-cards">
+                <li class="catalog-cards__item catalog-card">
+                  <a class="catalog-card__wraplink" href="">
+                    <div class="catalog-card__imagebox">
+                      <img class="catalog-card__image" src="https://www.spets.ru/upload/iblock/d3a/spetsodezhda.png" alt="Спецодежда">
+                    </div>
+                    <h2 class="catalog-card__title">Спецодежда</h2>
+                  </a>
+                </li>
+                <li class="catalog-cards__item catalog-card">
+                  <a class="catalog-card__wraplink" href="">
+                    <div class="catalog-card__imagebox">
+                      <img class="catalog-card__image" src="https://www.spets.ru/upload/iblock/e89/rabochaya_obuv.png" alt="Рабочая обувь">
+                    </div>
+                    <h2 class="catalog-card__title">Рабочая обувь</h2>
+                  </a>
+                </li>
+                <li class="catalog-cards__item catalog-card">
+                  <a class="catalog-card__wraplink" href="">
+                    <div class="catalog-card__imagebox">
+                      <img class="catalog-card__image" src="https://www.spets.ru/upload/iblock/ab0/sredstva_individualnoy_zashchity.png" alt="Средства индивидуальной защиты">
+                    </div>
+                    <h2 class="catalog-card__title">Средства индивидуальной защиты</h2>
+                  </a>
+                </li>
+                <li class="catalog-cards__item catalog-card">
+                  <a class="catalog-card__wraplink" href="">
+                    <div class="catalog-card__imagebox">
+                      <img class="catalog-card__image" src="https://www.spets.ru/upload/iblock/194/sredstva_zashchity_ruk.png" alt="Средства защиты рук">
+                    </div>
+                    <h2 class="catalog-card__title">Средства защиты рук</h2>
+                  </a>
+                </li>
+                <li class="catalog-cards__item catalog-card">
+                  <a class="catalog-card__wraplink" href="">
+                    <div class="catalog-card__imagebox">
+                      <img class="catalog-card__image" src="https://www.spets.ru/upload/iblock/2c9/khozyaystvennaya_gruppa.png" alt="Хозяйственная группа">
+                    </div>
+                    <h2 class="catalog-card__title">Хозяйственная группа</h2>
+                  </a>
+                </li>
+                <li class="catalog-cards__item catalog-card">
+                  <a class="catalog-card__wraplink" href="">
+                    <div class="catalog-card__imagebox">
+                      <img class="catalog-card__image" src="https://www.spets.ru/upload/iblock/da2/rasprodazha.png" alt="Распродажа">
+                    </div>
+                    <h2 class="catalog-card__title">Распродажа</h2>
+                  </a>
+                </li>
               </ul>
             </div>
           </section>
@@ -419,7 +461,47 @@
     </div>
 
     <footer class="main-footer">
-      <div class="container">Site footer</div>
+      <div class="container main-footer__inner">
+        <p class="main-footer__logo">
+          <img src="" alt="">
+        </p>
+        <p class="main-footer__to-sitemap">
+          <a href="" class="main-footer__to-sitemap-link">Карта сайта</a>
+        </p>
+        <p class="main-footer__copy">
+          © 2008-2018 Спец_Одежда — медицинская и рабочая спецодежда и средства защиты.
+        </p>
+
+        <div class="main-footer__nav">
+          <h3 class="main-footer__title main-footer__nav-title">Меню</h3>
+          <ul class="main-footer__nav-list">
+            <li><a href="">Каталог</a></li>
+            <li><a href="">О компании</a></li>
+            <li><a href="">Клиентам</a></li>
+            <li><a href="">Полезная инорфмация</a></li>
+            <li><a href="">Контакты</a></li>
+          </ul>
+        </div>
+
+        <ul class="main-footer__contacts footer-contacts">
+          <li class="footer-contacts__item">
+            <a class="footer-contacts__link" href="tel:+74959258894">
+              <svg class="footer-contacts__icon" width="16" height="16">
+                <use xlink:href=""></use>
+              </svg>
+              +7 (495) 925-88-94
+            </a>
+          </li>
+          <li class="footer-contacts__item">
+            <a class="footer-contacts__link" href="mailto:mail@spets.ru">
+              <svg class="footer-contacts__icon" width="16" height="16">
+                <use xlink:href=""></use>
+              </svg>
+              mail@spets.ru
+            </a>
+          </li>
+        </ul>
+      </div>
     </footer>
 
   </div>
