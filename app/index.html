@@ -16,108 +16,25 @@
     <div class="main-layout container">
       <div class="main-layout__row">
         <main class="main-layout__main main-content">
-          main_content
+          <section class="catalog">
+            <div class="common-header">
+              <h2 class="common-title">Каталог</h2>
+            </div>
+            <div class="common-body">
+              <ul>
+                <li><a href="">Спецодежда</a></li>
+                <li><a href="">Рабочая обувь</a></li>
+                <li><a href="">Средства индивидуальной защиты</a></li>
+                <li><a href="">Средства защиты рук</a></li>
+                <li><a href="">Хозяйственная группа</a></li>
+                <li><a href="">Распродажа</a></li>
+              </ul>
+            </div>
+          </section>
         </main>
-        <aside class="main-layout__sidebar sidebar">
-          <nav class="sidebar__module sidebar-catalog-nav">
-            Каталог
-            <ul class="sidebar-catalog-nav__list">
-              <li class="sidebar-catalog-nav__item sidebar-catalog-nav__item--has-dropdown">
-                <a class="sidebar-catalog-nav__link" href="">Спецодежда</a>
-                <div class="sidebar-catalog-nav__dropdown sidebar-category-nav">
-                  <ul class="sidebar-category-nav__list">
-                    <li class="sidebar-category-nav__item">
-                      <a class="sidebar-category-nav__link" href="">Летняя спецодежда</a>
-                    </li>
-                    <li class="sidebar-category-nav__item">
-                      <a class="sidebar-category-nav__link" href="">Зимняя спецодежда</a>
-                    </li>
-                    <li class="sidebar-category-nav__item">
-                      <a class="sidebar-category-nav__link" href="">Медицинская одежда</a>
-                    </li>
-                    <li class="sidebar-category-nav__item">
-                      <a class="sidebar-category-nav__link" href="">Одежда для сферы услуг</a>
-                    </li>
-                    <li class="sidebar-category-nav__item">
-                      <a class="sidebar-category-nav__link" href="">Одежда специальная</a>
-                    </li>
-                    <li class="sidebar-category-nav__item">
-                      <a class="sidebar-category-nav__link" href="">Одежда для охоты, рыбалки, туризма - Sobol™</a>
-                    </li>
-                    <li class="sidebar-category-nav__item">
-                      <a class="sidebar-category-nav__link" href="">Одежда для охранных структур</a>
-                    </li>
-                    <li class="sidebar-category-nav__item">
-                      <a class="sidebar-category-nav__link" href="">Головные уборы</a>
-                    </li>
-                    <li class="sidebar-category-nav__item">
-                      <a class="sidebar-category-nav__link" href="">Трикотаж</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="sidebar-catalog-nav__item sidebar-catalog-nav__item--has-dropdown">
-                <a class="sidebar-catalog-nav__link" href="">Рабочая обувь</a>
-                <div class="sidebar-catalog-nav__dropdown sidebar-category-nav">
-                  <ul class="sidebar-category-nav__list">
-                    <li class="sidebar-category-nav__item">
-                      <a class="sidebar-category-nav__link" href="">Обувь летняя, демисезонная</a>
-                    </li>
-                    <li class="sidebar-category-nav__item">
-                      <a class="sidebar-category-nav__link" href="">Обувь утеплённая</a>
-                    </li>
-                    <li class="sidebar-category-nav__item">
-                      <a class="sidebar-category-nav__link" href="">Обувь специальная, утеплённая</a>
-                    </li>
-                    <li class="sidebar-category-nav__item">
-                      <a class="sidebar-category-nav__link" href="">Обувь резиновая пвх</a>
-                    </li>
-                    <li class="sidebar-category-nav__item">
-                      <a class="sidebar-category-nav__link" href="">Обувь повседневная, прогулочная</a>
-                    </li>
-                    <li class="sidebar-category-nav__item">
-                      <a class="sidebar-category-nav__link" href="">Обувь медицинская</a>
-                    </li>
-                    <li class="sidebar-category-nav__item">
-                      <a class="sidebar-category-nav__link" href="">Аксессуары для обуви</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="sidebar-catalog-nav__item sidebar-catalog-nav__item--has-dropdown">
-                <a class="sidebar-catalog-nav__link" href="">Средства индивидуальной защиты</a>
-                <div class="sidebar-catalog-nav__dropdown sidebar-category-nav">
-                  <ul class="sidebar-category-nav__list">
-                    <li class="sidebar-category-nav__item">
-                      <a class="sidebar-category-nav__link" href="">Средства защиты головы и лица</a>
-                    </li>
-                    <li class="sidebar-category-nav__item">
-                      <a class="sidebar-category-nav__link" href="">Средства защиты органов зрения</a>
-                    </li>
-                    <li class="sidebar-category-nav__item">
-                      <a class="sidebar-category-nav__link" href="">Средства защиты при проведении сварочных работ</a>
-                    </li>
-                    <li class="sidebar-category-nav__item">
-                      <a class="sidebar-category-nav__link" href="">Средства защиты органов слуха</a>
-                    </li>
-                    <li class="sidebar-category-nav__item">
-                      <a class="sidebar-category-nav__link" href="">Средства защиты органов дыхания</a>
-                    </li>
-                    <li class="sidebar-category-nav__item">
-                      <a class="sidebar-category-nav__link" href="">Средства защиты при проведении высотных работ</a>
-                    </li>
-                    <li class="sidebar-category-nav__item">
-                      <a class="sidebar-category-nav__link" href="">Одежда с ограниченным сроком эксплуатации</a>
-                    </li>
-                    <li class="sidebar-category-nav__item">
-                      <a class="sidebar-category-nav__link" href="">Дерматологические средства защиты</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
-          </nav>
-        </aside>
+
+        <!-- Sidebar -->
+        @@include('blocks/sidebar.html')
       </div>
     </div>
 

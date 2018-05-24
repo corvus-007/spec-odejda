@@ -29,16 +29,34 @@
         <svg class="header-search__submit-icon" width="16" height="16">
           <use xlink:href=""></use>
         </svg>
+        <span class="visually-hidden">Поиск</span>
       </button>
     </form>
     <div class="main-header__controls header-controls">
-      <ul class="header-controls__item user-list"></ul>
+      <ul class="header-controls__item user-list">
+        <li class="user-list__item">
+          <button class="user-list__button" type="button">
+            <svg class="user-list__icon" width="28" height="28">
+              <use xlink:href="images/symbols.svg#user"></use>
+            </svg>
+            <span class="visually-hidden">Войти</span>
+          </button>
+        </li>
+        <li class="user-list__item">
+          <button class="user-list__button" type="button">
+            <svg class="user-list__icon" width="28" height="28">
+              <use xlink:href="images/symbols.svg#logout"></use>
+            </svg>
+            <span class="visually-hidden">Выйти</span>
+          </button>
+        </li>
+      </ul>
       <a class="header-controls__item cart-toggle" href="cart.html">
         <svg class="cart-toggle__icon" width="16" height="16">
           <use xlink:href=""></use>
         </svg>
-        <span class="cart-toggle__badge">2</span>
-        <span class="cart-toggle__text">товара в корзине</span>
+        <span class="visually-hidden">товара в корзине</span>
+        <span class="cart-toggle__amount">2</span>
       </a>
     </div>
   </div>
