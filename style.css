@@ -1740,6 +1740,7 @@ tbody tr:hover td {
   background-color: #fff;
   -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 2px;
 }
 
 .common-header {
@@ -1851,8 +1852,6 @@ ul:not([class]) li::before {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   fill: currentColor;
-  background-color: currentColor;
-  border-radius: 50%;
 }
 
 .header-search {
@@ -1895,13 +1894,12 @@ ul:not([class]) li::before {
 }
 
 .header-search__submit-icon {
-  width: 16px;
-  height: 16px;
+  display: block;
+  width: 18px;
+  height: 18px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   fill: currentColor;
-  background-color: currentColor;
-  border-radius: 50%;
 }
 
 .user-list {
@@ -1937,21 +1935,21 @@ ul:not([class]) li::before {
   -webkit-transition: 0.25s;
   transition: 0.25s;
   outline: none;
+  border-radius: 2px;
 }
 
 .user-list__button:hover, .user-list__button:focus {
   color: #3F51B5;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .user-list__icon {
   display: block;
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   fill: currentColor;
-  background-color: currentColor;
-  border-radius: 50%;
 }
 
 .cart-toggle {
@@ -1964,18 +1962,29 @@ ul:not([class]) li::before {
   padding: 10px;
   font-weight: 800;
   font-size: 0.77778rem;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
   text-decoration: none;
+  outline: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border-radius: 2px;
+}
+
+.cart-toggle:hover, .cart-toggle:focus {
+  color: #fff;
+  background-color: #3F51B5;
 }
 
 .cart-toggle__icon {
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
   margin-right: 6px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   fill: currentColor;
-  background-color: currentColor;
-  border-radius: 50%;
 }
 
 .header-controls {
@@ -2285,6 +2294,7 @@ ul:not([class]) li::before {
 
 .catalog-card__wraplink:hover, .catalog-card__wraplink:focus {
   color: #3F51B5;
+  background-color: #ffffff;
   -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
           box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
