@@ -1928,14 +1928,14 @@ ul:not([class]) li::before {
   color: #232020;
   border: none;
   cursor: pointer;
+  border-radius: 2px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  outline: none;
   -webkit-transition: 0.25s;
   transition: 0.25s;
-  outline: none;
-  border-radius: 2px;
 }
 
 .user-list__button:hover, .user-list__button:focus {
@@ -1962,15 +1962,15 @@ ul:not([class]) li::before {
   padding: 10px;
   font-weight: 800;
   font-size: 0.77778rem;
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
   text-decoration: none;
+  border-radius: 2px;
   outline: none;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  border-radius: 2px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
 }
 
 .cart-toggle:hover, .cart-toggle:focus {
@@ -2295,8 +2295,8 @@ ul:not([class]) li::before {
 .catalog-card__wraplink:hover, .catalog-card__wraplink:focus {
   color: #3F51B5;
   background-color: #ffffff;
-  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .catalog-card__imagebox {
