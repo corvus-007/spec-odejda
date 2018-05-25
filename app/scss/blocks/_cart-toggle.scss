@@ -5,6 +5,16 @@
   font-weight: 800;
   font-size: rem(14);
   text-decoration: none;
+  border-radius: $border-radius;
+  outline: none;
+  user-select: none;
+  transition: $duration;
+
+  &:hover,
+  &:focus {
+    color: #fff;
+    background-color: $accent-color;
+  }
 }
 
 .cart-toggle__amount {
@@ -12,11 +22,9 @@
 }
 
 .cart-toggle__icon {
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
   margin-right: 6px;
   flex-shrink: 0;
   fill: currentColor;
-  background-color: currentColor;
-  border-radius: 50%;
 }

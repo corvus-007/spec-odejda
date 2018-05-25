@@ -19,22 +19,22 @@
   color: $base-color;
   border: none;
   cursor: pointer;
+  border-radius: $border-radius;
   user-select: none;
-  transition: $duration;
   outline: none;
+  transition: $duration;
 
   &:hover,
   &:focus {
     color: $accent-color;
+    background-color: rgba(#fff, 0.8);
   }
 }
 
 .user-list__icon {
   display: block;
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
   flex-shrink: 0;
   fill: currentColor;
-  background-color: currentColor;
-  border-radius: 50%;
 }

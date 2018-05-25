@@ -17,12 +17,14 @@
   &:hover,
   &:focus {
     color: $accent-color;
-    box-shadow: 0 2px 8px rgba(#000, 0.2);
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(#000, 0.05);
   }
 }
 
 .catalog-card__imagebox {
   @include make-fit-object(300, 220);
+
   transition: $duration * 1.5;
 
   .catalog-card__wraplink:hover &,

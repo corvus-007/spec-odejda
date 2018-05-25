@@ -32,10 +32,9 @@
 }
 
 .header-search__submit-icon {
-  width: 16px;
-  height: 16px;
+  display: block;
+  width: 18px;
+  height: 18px;
   flex-shrink: 0;
   fill: currentColor;
-  background-color: currentColor;
-  border-radius: 50%;
 }
