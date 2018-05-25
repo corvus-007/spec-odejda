@@ -2418,14 +2418,16 @@ ul:not([class]) li::before {
 }
 
 .sidebar-catalog-nav__icon {
-  width: 20px;
-  height: 20px;
-  margin-right: 8px;
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   fill: currentColor;
-  background-color: currentColor;
-  border-radius: 50%;
+  -webkit-transition: -webkit-transform 0.25s;
+  transition: -webkit-transform 0.25s;
+  transition: transform 0.25s;
+  transition: transform 0.25s, -webkit-transform 0.25s;
 }
 
 .sidebar-catalog-nav__dropdown {
