@@ -27,9 +27,25 @@
 
   transition: $duration * 1.5;
 
+  &::before {
+    padding-top: 50%;
+  }
+
   .catalog-card__wraplink:hover &,
   .catalog-card__wraplink:focus & {
     filter: saturate(150%) contrast(110%);
+  }
+
+  @include mq-min(568px) {
+    &::before {
+      padding-top: 73%;
+    }
+  }
+
+  @include mq-range(768px, 960px) {
+    &::before {
+      padding-top: 50%;
+    }
   }
 }
 

@@ -1,18 +1,22 @@
 <footer class="main-footer">
   <div class="container main-footer__inner">
-    <p class="main-footer__logo">
-      <img src="" alt="">
-    </p>
-    <p class="main-footer__to-sitemap">
-      <a href="" class="main-footer__to-sitemap-link">Карта сайта</a>
-    </p>
-    <p class="main-footer__copy">
-      © 2008-2018 Спец_Одежда — медицинская и рабочая спецодежда и средства защиты.
-    </p>
-
-    <div class="main-footer__nav">
+    <div class="main-footer__column">
+      <p class="main-footer__logo">
+        <img class="logo__image" src="http://placehold.it/100x60/F38181/fff" alt="Логотип компании «Название_компании»">
+      </p>
+      <a href="" class="main-footer__to-sitemap">
+        <svg class="main-footer__to-sitemap-icon">
+          <use xlink:href="images/symbols.svg#sitemap"></use>
+        </svg>
+        Карта сайта
+      </a>
+      <p class="main-footer__copy">
+        © 2008-2018 Спец_Одежда — медицинская и рабочая спецодежда и средства защиты.
+      </p>
+    </div>
+    <div class="main-footer__column">
       <h3 class="main-footer__title main-footer__nav-title">Меню</h3>
-      <ul class="main-footer__nav-list">
+      <ul class="main-footer__nav">
         <li><a href="">Каталог</a></li>
         <li><a href="">О компании</a></li>
         <li><a href="">Клиентам</a></li>
@@ -20,24 +24,52 @@
         <li><a href="">Контакты</a></li>
       </ul>
     </div>
+    <div class="main-footer__column main-footer__text">
+      <p>Обращаем ваше внимание на то, что информация интернет-сайта www.spets.ru носит исключительно информационный характер и не является публичной офертой, определяемой положениями ст. 437 ГК РФ.</p>
 
-    <ul class="main-footer__contacts footer-contacts">
-      <li class="footer-contacts__item">
-        <a class="footer-contacts__link" href="tel:+74959258894">
-          <svg class="footer-contacts__icon" width="16" height="16">
-            <use xlink:href=""></use>
+      <p>Производитель оставляет за собой право в одностороннем порядке вносить изменения в состав материалов, используемых в производстве продукции, при условии сохранения функциональных и защитных свойств продукции.</p>
+    </div>
+    <div class="main-footer__column">
+      <h3 class="main-footer__title main-footer__nav-title">Контакты</h3>
+      <ul class="main-footer__contacts footer-contacts">
+        <li class="footer-contacts__item">
+          <a class="footer-contacts__link" href="tel:+74959258894">
+            <svg class="footer-contacts__icon" width="16" height="16">
+              <use xlink:href="images/symbols.svg#phone"></use>
+            </svg>
+            +7 (495) 925-88-94
+          </a>
+        </li>
+        <li class="footer-contacts__item">
+          <a class="footer-contacts__link" href="mailto:mail@spets.ru">
+            <svg class="footer-contacts__icon" width="16" height="16">
+              <use xlink:href="images/symbols.svg#at"></use>
+            </svg>
+            mail@spets.ru
+          </a>
+        </li>
+      </ul>
+
+      <div class="main-footer__socials socials">
+        <a class="socials__item" href="" title="">
+          <svg class="socials__icon" width="42" height="42">
+            <use xlink:href="images/symbols.svg#soc-instagram"></use>
+            <span class="visually-hidden">Instagram</span>
           </svg>
-          +7 (495) 925-88-94
         </a>
-      </li>
-      <li class="footer-contacts__item">
-        <a class="footer-contacts__link" href="mailto:mail@spets.ru">
-          <svg class="footer-contacts__icon" width="16" height="16">
-            <use xlink:href=""></use>
+        <a class="socials__item" href="" title="">
+          <svg class="socials__icon" width="42" height="42">
+            <use xlink:href="images/symbols.svg#soc-twitter"></use>
+            <span class="visually-hidden">Twitter</span>
           </svg>
-          mail@spets.ru
         </a>
-      </li>
-    </ul>
+        <a class="socials__item" href="" title="">
+          <svg class="socials__icon" width="42" height="42">
+            <use xlink:href="images/symbols.svg#soc-facebook"></use>
+            <span class="visually-hidden">Facebook</span>
+          </svg>
+        </a>
+      </div>
+    </div>
   </div>
 </footer>

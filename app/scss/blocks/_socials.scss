@@ -4,18 +4,21 @@
 }
 
 .socials__item {
-  display: inline-block;
+  margin-right: 8px;
+  font-size: 0;
   vertical-align: middle;
   text-decoration: none;
-  margin-right: 1.2em;
+  color: #ffffff;
   border: none;
   transition: $duration;
-  color: $accent-color;
+  opacity: 0.8;
+  filter: grayscale(100%);
 
   &:hover,
   &:focus {
-    transform: scale(1.1);
-    color: $white-color;
+    color: #ffffff;
+    filter: grayscale(0%);
+    opacity: 1;
   }
 
   &:last-child {
@@ -24,6 +27,7 @@
 }
 
 .socials__icon {
+  display: block;
   vertical-align: middle;
   fill: currentColor;
 }

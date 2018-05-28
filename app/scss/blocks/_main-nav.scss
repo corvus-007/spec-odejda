@@ -1,7 +1,7 @@
 // 1. Дублирую правили, потому что в IE и Edge не работает выпадашка при перечислении селекторов вместе с :focus-widthin
 
 .main-nav {
-  background-color: #3F51B5;
+  background-color: $accent-color;
 }
 
 .main-nav__list {
