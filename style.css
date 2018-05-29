@@ -2368,9 +2368,9 @@ tbody tr:hover td {
   padding-bottom: 10px;
   font-weight: 700;
   font-size: 1.33333rem;
-  line-height: 1.2;
+  line-height: 1.1;
   text-transform: uppercase;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(35, 32, 32, 0.2);
 }
 
 .common-body {
@@ -3356,10 +3356,11 @@ ul:not([class]) li::before {
   margin: 0;
   margin-bottom: 5px;
   padding-left: 15px;
-  text-align: left;
   padding-right: 15px;
   font-weight: 700;
   font-size: 1rem;
+  line-height: 1.1;
+  text-align: left;
 }
 
 .product-card__vendor-code {
