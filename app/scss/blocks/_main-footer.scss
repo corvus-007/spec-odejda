@@ -2,8 +2,13 @@
   padding-top: $gutter;
   padding-bottom: $gutter;
   font-size: rem(14);
+  line-height: 1.2;
   color: $light-color;
   background-color: #404B69;
+
+  @include mq-max(767px) {
+    text-align: center;
+  }
 }
 
 .main-footer__inner {
@@ -14,10 +19,23 @@
 }
 
 .main-footer__column {
-  margin-right: $gutter * 2;
+  margin-bottom: $gutter;
 
   &:last-child {
-    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  @include mq-min(768px) {
+    margin-right: $gutter;
+    margin-bottom: 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  @include mq-min(992px) {
+    margin-right: $gutter * 2;
   }
 }
 
@@ -34,7 +52,7 @@
 }
 
 .main-footer__to-sitemap {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   margin-bottom: 20px;
   padding-top: 2px;
@@ -42,6 +60,7 @@
   font-weight: 500;
   font-size: rem(16);
   text-decoration: none;
+  white-space: nowrap;
   color: #ffffff;
   opacity: 0.7;
   transition: $duration;
@@ -62,14 +81,19 @@
 }
 
 .main-footer__copy {
-  max-width: 200px;
   margin-bottom: 0;
+
+  @include mq-min(768px) {
+    max-width: 200px;
+  }
 }
 
 .main-footer__text {
   @include clear-mr-edges-elem();
 
-  max-width: 400px;
+  @include mq-min(768px) {
+    max-width: 400px;
+  }
 }
 
 .main-footer__nav {
@@ -77,8 +101,8 @@
 
   a {
     display: block;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding-top: 4px;
+    padding-bottom: 4px;
     font-weight: 500;
     font-size: rem(16);
     text-decoration: none;
@@ -97,4 +121,16 @@
 
 .main-footer__contacts {
   margin-bottom: 20px;
+
+  @include mq-max(767px) {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 140px;
+  }
+}
+
+.main-footer__socials {
+  @include mq-max(767px) {
+    // justify-content: center;
+  }
 }

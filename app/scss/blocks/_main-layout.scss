@@ -6,10 +6,16 @@
 .main-layout__row {
   display: flex;
   flex-direction: column;
+  margin-bottom: $gutter;
 
   @include mq-min(768px) {
     flex-direction: row;
   }
+}
+
+.main-layout__breadcrumbs {
+  margin-top: -10px;
+  margin-bottom: -10px;
 }
 
 .main-layout__main {

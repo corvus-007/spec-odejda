@@ -1,6 +1,6 @@
 .socials {
   display: flex;
-  text-align: center;
+  justify-content: center;
 }
 
 .socials__item {
@@ -11,14 +11,12 @@
   color: #ffffff;
   border: none;
   transition: $duration;
-  opacity: 0.8;
-  filter: grayscale(100%);
+  filter: grayscale(50%);
 
   &:hover,
   &:focus {
     color: #ffffff;
     filter: grayscale(0%);
-    opacity: 1;
   }
 
   &:last-child {

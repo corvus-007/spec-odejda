@@ -1,0 +1,29 @@
+.product-cards {
+
+  @include clear-list();
+
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -$gutter
+}
+
+.product-cards__item {
+  width: 100%;
+  margin-bottom: $gutter;
+
+  @include mq-range(320px, 666px) {
+    @include calc-column-width(2);
+  }
+
+  @include mq-range(667px, 767px) {
+    @include calc-column-width(3);
+  }
+
+  @include mq-range(768px, 991px) {
+    @include calc-column-width(2);
+  }
+
+  @include mq-min(992px) {
+    @include calc-column-width(3);
+  }
+}

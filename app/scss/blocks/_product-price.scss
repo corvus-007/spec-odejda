@@ -1,0 +1,36 @@
+.product-price {
+  text-align: left;
+}
+
+.product-price__sum {
+  display: block;
+  font-weight: 800;
+  font-size: rem(22);
+  white-space: nowrap;
+  text-decoration: none;
+
+  &--old {
+    font-size: rem(15);
+    color: #aaa;
+  }
+}
+
+.product-price__value {
+
+}
+
+.product-price__currency {
+  font-size: 0;
+
+  &::before {
+    content: "₽";
+    font-size: rem(20);
+    font-weight: 600;
+  }
+
+  .product-price__sum--old & {
+    &::before {
+      font-size: rem(15);
+    }
+  }
+}

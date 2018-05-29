@@ -1,0 +1,23 @@
+.product-badges {
+  @include clear-list();
+
+  font-weight: 600;
+  font-size: rem(12);
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  color: #616161;
+}
+
+.product-badges__item {
+  padding: 4px 8px;
+  border-radius: $border-radius;
+  background-color: #eee;
+
+  &--new {
+    background-color: #A9EEE6;
+  }
+
+  &--sale {
+    background-color: #F9ED69;
+  }
+}

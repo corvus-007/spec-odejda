@@ -27,14 +27,14 @@
   &:hover,
   &:focus {
     color: $accent-color;
-    background-color: rgba(#fff, 0.8);
+    background-color: rgba(#ffffff, 0.25);
   }
 }
 
 .user-list__icon {
   display: block;
-  width: 18px;
-  height: 18px;
+  width: 22px;
+  height: 22px;
   flex-shrink: 0;
   fill: currentColor;
 }

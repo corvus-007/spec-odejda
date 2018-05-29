@@ -1,3 +1,7 @@
 .main-content {
+  margin-bottom: -$gutter;
+}
 
+.main-content__section {
+  margin-bottom: $gutter;
 }

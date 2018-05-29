@@ -67,21 +67,23 @@
 }
 
 .sidebar-catalog-nav__dropdown {
-  position: absolute;
-  left: 100%;
-  top: 0;
-  min-width: 320px;
-  min-height: 480px;
-  pointer-events: none;
-  opacity: 0;
+  @include mq-min(768px) {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    min-width: 320px;
+    min-height: 480px;
+    pointer-events: none;
+    opacity: 0;
 
-  .sidebar-catalog-nav__item:hover & {
-    opacity: 1;
-    pointer-events: auto;
-  }
+    .sidebar-catalog-nav__item:hover & {
+      opacity: 1;
+      pointer-events: auto;
+    }
 
-  .sidebar-catalog-nav__item:focus-within & { // 1.
-    opacity: 1;
-    pointer-events: auto;
+    .sidebar-catalog-nav__item:focus-within & { // 1.
+      opacity: 1;
+      pointer-events: auto;
+    }
   }
 }
