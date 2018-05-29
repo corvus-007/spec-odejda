@@ -2940,6 +2940,7 @@ ul:not([class]) li::before {
           flex-grow: 1;
   text-decoration: none;
   color: #424242;
+  background-color: #ffffff;
   border-radius: 2px;
   overflow: hidden;
   -webkit-transition: 0.375s;
@@ -2948,7 +2949,6 @@ ul:not([class]) li::before {
 
 .catalog-card__wraplink:hover, .catalog-card__wraplink:focus {
   color: #3f51b5;
-  background-color: #ffffff;
   -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
           box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
@@ -3105,6 +3105,7 @@ ul:not([class]) li::before {
           flex-grow: 1;
   text-decoration: none;
   color: #424242;
+  background-color: #ffffff;
   border-radius: 2px;
   overflow: hidden;
   -webkit-transition: 0.375s;
@@ -3113,7 +3114,6 @@ ul:not([class]) li::before {
 
 .category-card__wraplink:hover, .category-card__wraplink:focus {
   color: #3f51b5;
-  background-color: #ffffff;
   -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
           box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
