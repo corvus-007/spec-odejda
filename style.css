@@ -3276,6 +3276,12 @@ ul:not([class]) li::before {
           box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+.product-card:focus-within {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
 .product-card__wraplink {
   position: relative;
   display: block;
