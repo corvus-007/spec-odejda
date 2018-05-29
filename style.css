@@ -2443,10 +2443,16 @@ ul:not([class]) li::before {
   padding: 0;
   margin: 0;
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .header-contacts__item {
   white-space: nowrap;
+  margin-right: 20px;
 }
 
 .header-contacts__link {
@@ -2456,8 +2462,8 @@ ul:not([class]) li::before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-weight: 500;
-  font-size: 0.88889rem;
+  font-weight: 600;
+  font-size: 1.11111rem;
   text-decoration: none;
   color: #424242;
 }
@@ -2466,10 +2472,14 @@ ul:not([class]) li::before {
   color: #3f51b5;
 }
 
+.header-contacts__link b {
+  font-weight: 700;
+}
+
 .header-contacts__icon {
-  width: 16px;
-  height: 16px;
-  margin-right: 8px;
+  width: 18px;
+  height: 18px;
+  margin-right: 6px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   fill: currentColor;
@@ -2483,7 +2493,8 @@ ul:not([class]) li::before {
 }
 
 .header-search__input {
-  padding: 8px 10px;
+  padding: 10px 15px;
+  min-width: 180px;
   padding-right: 0;
   font-weight: 500;
   background-color: transparent;
@@ -2629,12 +2640,16 @@ ul:not([class]) li::before {
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: #e0e0e0;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#d0d0d0), to(#e0e0e0));
+  background-image: linear-gradient(to top, #d0d0d0, #e0e0e0);
 }
 
 .main-header__inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -2644,16 +2659,21 @@ ul:not([class]) li::before {
 }
 
 .main-header__logo {
-  margin-right: 60px;
+  min-width: 100px;
 }
 
-.main-header__contacts {
-  margin-left: auto;
+.main-header__logo {
   margin-right: auto;
 }
 
+.main-header__contacts {
+  margin-right: -20px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
 .main-header__search {
-  margin-left: 60px;
+  margin-left: auto;
   margin-right: 60px;
 }
 
@@ -2710,7 +2730,7 @@ ul:not([class]) li::before {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 8px 15px;
+  padding: 10px 15px;
   font-weight: 600;
   font-size: 1rem;
   text-transform: uppercase;
@@ -3019,7 +3039,7 @@ ul:not([class]) li::before {
   padding: 22px 10px;
   font-weight: 800;
   font-size: 1rem;
-  line-height: 1.2;
+  line-height: 1.15;
   text-align: center;
   text-transform: uppercase;
 }
@@ -3169,7 +3189,7 @@ ul:not([class]) li::before {
   padding-bottom: 15px;
   font-weight: 800;
   font-size: 0.88889rem;
-  line-height: 1.2;
+  line-height: 1.15;
   text-align: center;
 }
 
@@ -3400,7 +3420,7 @@ ul:not([class]) li::before {
   padding-right: 15px;
   font-weight: 700;
   font-size: 1rem;
-  line-height: 1.1;
+  line-height: 1.15;
   text-align: left;
 }
 
@@ -3460,7 +3480,7 @@ ul:not([class]) li::before {
   padding-right: 40px;
   font-weight: 700;
   font-size: 0.94444rem;
-  line-height: 1.2;
+  line-height: 1.15;
   text-transform: uppercase;
   text-decoration: none;
   color: #424242;
@@ -3544,7 +3564,7 @@ ul:not([class]) li::before {
   display: block;
   padding: 10px 15px;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.15;
   text-decoration: none;
   color: #424242;
   -webkit-transition: 0.25s;
@@ -3731,7 +3751,7 @@ ul:not([class]) li::before {
 .footer-contacts__icon {
   width: 16px;
   height: 16px;
-  margin-right: 8px;
+  margin-right: 6px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   fill: currentColor;
