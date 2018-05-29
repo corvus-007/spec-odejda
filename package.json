@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "@fancyapps/fancybox": "^3.3.5",
-    "svg4everybody": "^2.1.9"
+    "svg4everybody": "^2.1.9",
+    "tippy.js": "^2.5.2"
   }
 }
