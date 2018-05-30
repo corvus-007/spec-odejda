@@ -10,6 +10,7 @@
   flex-grow: 1;
   text-decoration: none;
   color: $base-color;
+  background-color: #ffffff;
   border-radius: $border-radius;
   overflow: hidden;
   transition: $duration * 1.5;
@@ -17,7 +18,6 @@
   &:hover,
   &:focus {
     color: $accent-color;
-    background-color: #ffffff;
     box-shadow: 0 2px 8px rgba(#000, 0.1);
   }
 }
@@ -33,7 +33,7 @@
 
   .catalog-card__wraplink:hover &,
   .catalog-card__wraplink:focus & {
-    filter: saturate(150%) contrast(110%);
+    filter: saturate(120%);
   }
 
   @include mq-min(568px) {
@@ -59,7 +59,7 @@
   padding: 22px 10px;
   font-weight: 800;
   font-size: rem(18);
-  line-height: 1.2;
+  line-height: 1.15;
   text-align: center;
   text-transform: uppercase;
 }
