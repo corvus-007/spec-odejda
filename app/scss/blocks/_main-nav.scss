@@ -5,9 +5,10 @@
 }
 
 .main-nav__toggle {
-  display: block;
+  display: flex;
   width: 100%;
   text-align: center;
+  color: #ffffff;
 
   @include mq-min(768px) {
     display: none;
@@ -17,9 +18,20 @@
 .main-nav__list {
   @include clear-list();
 
+  @include mq-max(767px) {
+    display: none;
+
+    .main-nav--opened & {
+      display: block;
+    }
+
+    .main-nav--no-js & {
+      display: block;
+    }
+  }
+
   @include mq-min(768px) {
     display: flex;
-    // display: none;
   }
 }
 
@@ -45,7 +57,16 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
-  transition: $duration * 2;
+  user-select: none;
+  transition: $duration * 1.5;
+
+  &:not([href]) {
+    cursor: default;
+  }
+
+  &:hover {
+    color: #ffffff;
+  }
 
   .main-nav__item--has-dropdown &::after {
     content: "";
@@ -58,28 +79,59 @@
     transition: opacity $duration;
   }
 
-  .main-nav__item:hover &,
-  &:hover,
-  &:focus {
-    color: #ffffff;
-    background-color: rgba(#000000, 0.2);
+  @include mq-max(767px) {
+    border-bottom: 1px solid transparent;
 
-    &::after {
-      opacity: 1;
+    .main-nav__item--opened & {
+      color: #ffffff;
+      background-color: rgba(#000000, 0.2);
+      border-color: $accent-color;
+
+      &::after {
+        opacity: 1;
+      }
     }
   }
 
-  .main-nav__item:focus-within & { // 1.
-    color: #ffffff;
-    background-color: rgba(#000000, 0.2);
+  @include mq-min(768px) {
+    .main-nav__item--opened &,
+    .main-nav__item:hover &,
+    &:hover,
+    &:focus {
+      color: #ffffff;
+      background-color: rgba(#000000, 0.2);
 
-    &::after {
-      opacity: 1;
+      &::after {
+        opacity: 1;
+      }
+    }
+
+    .main-nav__item:focus-within & { // 1.
+      color: #ffffff;
+      background-color: rgba(#000000, 0.2);
+
+      &::after {
+        opacity: 1;
+      }
     }
   }
 }
 
 .main-nav__dropdown {
+  @include mq-max(767px) {
+    display: none;
+
+    .main-nav--no-js & {
+      display: block;
+    }
+
+    .main-nav__item--opened & {
+      display: block;
+      background-color: rgba(#000000, 0.2);
+      box-shadow: none;
+    }
+  }
+
   @include mq-min(768px) {
     position: absolute;
     z-index: 5;

@@ -20,6 +20,7 @@
   font-size: rem(16);
   text-decoration: none;
   color: #ffffff;
+  user-select: none;
   transition: $duration;
 
   &:hover,
