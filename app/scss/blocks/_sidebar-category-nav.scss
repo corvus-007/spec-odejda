@@ -20,6 +20,7 @@
   line-height: 1.15;
   text-decoration: none;
   color: $base-color;
+  user-select: none;
   transition: $duration;
 
   &:hover,
