@@ -48,3 +48,21 @@
   font-weight: 900;
   font-style: normal;
 }
+
+
+// Encode Sans Expanded
+@font-face {
+  font-family: 'encode_sans_expanded';
+  src: url('fonts/encode_sans_expanded/encodesansexpanded-regular-webfont.woff2') format('woff2'),
+       url('fonts/encode_sans_expanded/encodesansexpanded-regular-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'encode_sans_expanded';
+  src: url('fonts/encode_sans_expanded/encodesansexpanded-medium-webfont.woff2') format('woff2'),
+       url('fonts/encode_sans_expanded/encodesansexpanded-medium-webfont.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
