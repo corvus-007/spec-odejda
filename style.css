@@ -391,6 +391,20 @@ template {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'encode_sans_expanded';
+  src: url("fonts/encode_sans_expanded/encodesansexpanded-regular-webfont.woff2") format("woff2"), url("fonts/encode_sans_expanded/encodesansexpanded-regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'encode_sans_expanded';
+  src: url("fonts/encode_sans_expanded/encodesansexpanded-medium-webfont.woff2") format("woff2"), url("fonts/encode_sans_expanded/encodesansexpanded-medium-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
 html {
   font-size: 18px;
 }
@@ -400,7 +414,7 @@ body {
   font-weight: normal;
   font-size: 100%;
   line-height: 1.45;
-  font-family: "Akrobat", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Akrobat", "Helvetica Neue", "Helvetica", "encode_sans_expanded", "Arial", sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   color: #424242;
@@ -1997,7 +2011,7 @@ body:not(.tippy-touch) .tippy-popper[x-placement=left] .tippy-tooltip[data-anima
   font-weight: 800;
   font-size: 0.77778rem;
   line-height: normal;
-  font-family: "Akrobat", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Akrobat", "Helvetica Neue", "Helvetica", "encode_sans_expanded", "Arial", sans-serif;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -2755,8 +2769,8 @@ ul:not([class]) li::before {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.375s;
+  transition: 0.375s;
 }
 
 .main-nav__link:not([href]) {
@@ -3572,8 +3586,16 @@ ul:not([class]) li::before {
   text-transform: uppercase;
   text-decoration: none;
   color: #424242;
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
+  -webkit-transition: 0.375s;
+  transition: 0.375s;
+}
+
+.sidebar-catalog-nav__link:not([href]) {
+  cursor: default;
+}
+
+.sidebar-catalog-nav__link:hover {
+  color: #424242;
 }
 
 .sidebar-catalog-nav__item--has-dropdown .sidebar-catalog-nav__link::after {
@@ -3593,16 +3615,36 @@ ul:not([class]) li::before {
   opacity: 0.3;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+  -webkit-transition: -webkit-transform 0.25s;
+  transition: -webkit-transform 0.25s;
+  transition: transform 0.25s;
+  transition: transform 0.25s, -webkit-transform 0.25s;
 }
 
-.sidebar-catalog-nav__item:hover .sidebar-catalog-nav__link, .sidebar-catalog-nav__link:hover, .sidebar-catalog-nav__link:focus {
-  color: #3f51b5;
-  background-color: rgba(0, 0, 0, 0.04);
+@media (max-width: 767px) {
+  .sidebar-catalog-nav__link {
+    border-bottom: 1px solid transparent;
+  }
+  .sidebar-catalog-nav__item--opened .sidebar-catalog-nav__link {
+    color: #3f51b5;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-color: #3f51b5;
+  }
+  .sidebar-catalog-nav__item--opened .sidebar-catalog-nav__link::after {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
 }
 
-.sidebar-catalog-nav__item:focus-within .sidebar-catalog-nav__link {
-  color: #3f51b5;
-  background-color: rgba(0, 0, 0, 0.04);
+@media (min-width: 768px) {
+  .sidebar-catalog-nav__item:hover .sidebar-catalog-nav__link, .sidebar-catalog-nav__link:hover, .sidebar-catalog-nav__link:focus {
+    color: #3f51b5;
+    background-color: rgba(0, 0, 0, 0.04);
+  }
+  .sidebar-catalog-nav__item:focus-within .sidebar-catalog-nav__link {
+    color: #3f51b5;
+    background-color: rgba(0, 0, 0, 0.04);
+  }
 }
 
 .sidebar-catalog-nav__icon {
@@ -3612,6 +3654,21 @@ ul:not([class]) li::before {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   fill: currentColor;
+}
+
+@media (max-width: 767px) {
+  .sidebar-catalog-nav__dropdown {
+    display: none;
+  }
+  .sidebar-catalog-nav--no-js .sidebar-catalog-nav__dropdown {
+    display: block;
+  }
+  .sidebar-catalog-nav__item--opened .sidebar-catalog-nav__dropdown {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.05);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
 }
 
 @media (min-width: 768px) {
