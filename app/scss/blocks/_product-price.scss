@@ -5,12 +5,12 @@
 .product-price__sum {
   display: block;
   font-weight: 800;
-  font-size: rem(22);
+  font-size: rem(24);
   white-space: nowrap;
   text-decoration: none;
 
   &--old {
-    font-size: rem(15);
+    font-size: rem(16);
     color: #aaa;
   }
 }
