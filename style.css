@@ -440,7 +440,7 @@ body {
 
 @media (min-width: 1280px) {
   .container {
-    max-width: 1180px;
+    max-width: 1220px;
   }
 }
 
@@ -2332,7 +2332,7 @@ tbody tr:hover td {
 
 @media (min-width: 1280px) {
   .common-section__header {
-    max-width: 1180px;
+    max-width: 1220px;
   }
 }
 
@@ -2457,16 +2457,10 @@ ul:not([class]) li::before {
   padding: 0;
   margin: 0;
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .header-contacts__item {
   white-space: nowrap;
-  margin-right: 20px;
 }
 
 .header-contacts__link {
@@ -2477,7 +2471,7 @@ ul:not([class]) li::before {
       -ms-flex-align: center;
           align-items: center;
   font-weight: 600;
-  font-size: 1.11111rem;
+  font-size: 1rem;
   text-decoration: none;
   color: #424242;
 }
@@ -2508,7 +2502,7 @@ ul:not([class]) li::before {
 
 .header-search__input {
   padding: 10px 15px;
-  min-width: 180px;
+  min-width: 200px;
   padding-right: 0;
   font-weight: 500;
   background-color: transparent;
@@ -2558,14 +2552,6 @@ ul:not([class]) li::before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.user-list__item {
-  margin-right: 8px;
-}
-
-.user-list__item:last-child {
-  margin-right: 0;
 }
 
 .user-list__button {
@@ -2681,13 +2667,11 @@ ul:not([class]) li::before {
 }
 
 .main-header__contacts {
-  margin-right: -20px;
-  padding-left: 60px;
-  padding-right: 60px;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 
 .main-header__search {
-  margin-left: auto;
   margin-right: 60px;
 }
 
@@ -3797,7 +3781,7 @@ ul:not([class]) li::before {
 
 @media (min-width: 1280px) {
   .page__breadcrumbs {
-    max-width: 1180px;
+    max-width: 1220px;
   }
 }
 
