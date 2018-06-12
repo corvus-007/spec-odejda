@@ -1,7 +1,12 @@
 document.addEventListener('DOMContentLoaded', function () {
+  'use strict';
+
   svg4everybody();
-  console.log('script.js');
+
+
+  $('.product-tabs').tabslet();
+
   tippy('[title]', {
-    size: 'small'
+    // size: 'small'
   })
 });
