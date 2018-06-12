@@ -6,6 +6,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
   $('.product-tabs').tabslet();
 
+  $('.product-detail-accordion').accordionjs();
+
   tippy('[title]', {
     // size: 'small'
   })
