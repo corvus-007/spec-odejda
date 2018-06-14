@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
   svg4everybody();
 
 
-  $('.product-tabs').tabslet();
+  $('.product-detail-tabs').tabslet();
 
   $('.product-detail-accordion').accordionjs();
 
