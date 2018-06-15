@@ -205,6 +205,149 @@
         <main class="main-layout__main main-content">
           <article class="main-content__section cart">
             <h1>Корзина</h1>
+
+            <table class="cart-list">
+              <thead class="cart-list__head">
+                <tr>
+                  <th>Наименование</th>
+                  <th>Количество</th>
+                  <th>Цена</th>
+                  <th>% скидки</th>
+                  <th>Поставка</th>
+                  <th>Удалить</th>
+                </tr>
+              </thead>
+              <tbody class="cart-list__body">
+                <tr class="cart-list__item cart-item">
+                  <td data-th="Наименование">
+                    <div class="cart-item__name">
+                      <a href="">Костюм Бархан-2, коричнево-бежевый (112-116, 182-188)</a>
+                      <span class="cart-item__vendor-code">ЛС 3218.01</span>
+                    </div>
+                  </td>
+                  <td data-th="Количество">
+                    <div class="cart-item__counter counter">
+                      <button class="counter__control counter__control--decrease button" type="button" aria-label="Уменьшить на 1">-</button>
+                      <input class="counter__input input" type="number" min="0" placeholder="0">
+                      <button class="counter__control counter__control--increase button" type="button" aria-label="Увеличить на 1">+</button>
+                    </div>
+                  </td>
+                  <td data-th="Цена">
+                    <div class="cart-item__price product-price">
+                      <ins class="product-price__sum">
+                        <span class="product-price__value">1 799 <span class="product-price__currency">руб.</span></span>
+                      </ins>
+                    </div>
+                  </td>
+                  <td data-th="% скидки">
+                    0
+                  </td>
+                  <td data-th="Поставка">
+                    В наличии
+                  </td>
+                  <td data-th="Удалить">
+                    <button class="cart-item__to-delete button" type="button" aria-label="Удалить товар">
+                      <svg class="cart-item__to-delete-icon button__icon" width="16" height="16">
+                        <use xlink:href="images/symbols.svg#close"></use>
+                      </svg>
+                    </button>
+                  </td>
+                </tr>
+                <tr class="cart-list__item cart-item">
+                  <td data-th="Наименование">
+                    <div class="cart-item__name">
+                      <a href="">Костюм Бархан-2, коричнево-бежевый (112-116, 182-188)</a>
+                      <span class="cart-item__vendor-code">ЛС 3218.01</span>
+                    </div>
+                  </td>
+                  <td data-th="Количество">
+                    <div class="cart-item__counter counter">
+                      <button class="counter__control counter__control--decrease button" type="button" aria-label="Уменьшить на 1">-</button>
+                      <input class="counter__input input" type="number" min="0" placeholder="0">
+                      <button class="counter__control counter__control--increase button" type="button" aria-label="Увеличить на 1">+</button>
+                    </div>
+                  </td>
+                  <td data-th="Цена">
+                    <div class="cart-item__price product-price">
+                      <ins class="product-price__sum">
+                        <span class="product-price__value">1 799 <span class="product-price__currency">руб.</span></span>
+                      </ins>
+                    </div>
+                  </td>
+                  <td data-th="% скидки">
+                    0
+                  </td>
+                  <td data-th="Поставка">
+                    В наличии
+                  </td>
+                  <td data-th="Удалить">
+                    <button class="cart-item__to-delete button" type="button" aria-label="Удалить товар">
+                      <svg class="cart-item__to-delete-icon button__icon" width="16" height="16">
+                        <use xlink:href="images/symbols.svg#close"></use>
+                      </svg>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="5">Итого:</td>
+                  <td>
+                    <div class="cart-item__price product-price">
+                      <ins class="product-price__sum">
+                        <span class="product-price__value">1 799 <span class="product-price__currency">руб.</span></span>
+                      </ins>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="5">Скидка:</td>
+                  <td>
+                    <div class="cart-item__price product-price">
+                      <ins class="product-price__sum">
+                        <span class="product-price__value">0 <span class="product-price__currency">руб.</span></span>
+                      </ins>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="cart__discount-price">
+                  <td colspan="5">Итого к оплате:</td>
+                  <td>
+                    <div class="cart-item__price product-price">
+                      <ins class="product-price__sum">
+                        <span class="product-price__value">1 799 <span class="product-price__currency">руб.</span></span>
+                      </ins>
+                    </div>
+                  </td>
+                </tr>
+              </tfoot>
+            </table>
+            <ul class="cart__info cart-info">
+              <li class="cart-info__item">Вес заказа: <b>1,1 кг</b></li>
+              <li class="cart-info__item">Объём заказа: <b>0,004 м³</b></li>
+            </ul>
+
+            <div class="cart__actions cart-actions">
+              <a class="cart-actions__item button button--fill" href="">
+                <svg class="button__icon" width="16" height="16" title="Сохранить в Excel">
+                  <use xlink:href="images/symbols.svg#file-excel"></use>
+                </svg>
+              </a>
+              <a class="cart-actions__item button button--fill" href="">
+                <svg class="button__icon" width="16" height="16" title="Сохраить в PDF">
+                  <use xlink:href="images/symbols.svg#file-pdf"></use>
+                </svg>
+              </a>
+              <a class="cart-actions__item cart-actions__to-shop button" href="">
+                Продолжить покупки
+              </a>
+              <button class="cart-actions__item cart-actions__to-clear-car button button--danger" type="button">
+                <svg class="button__icon button__icon--left" width="16" height="16">
+                  <use xlink:href="images/symbols.svg#cart-off"></use>
+                </svg>
+                Очистить корзину
+              </button>
+            </div>
           </article>
         </main>
       </div>
