@@ -2,6 +2,11 @@ window.sidebarCatalogNav = (function () {
   console.log('sidebar-catalog-nav');
 
   var sidebarCatalogNav = document.querySelector('.sidebar-catalog-nav');
+
+  if (!sidebarCatalogNav) {
+    return false;
+  }
+
   var sidebarCatalogNavItems = sidebarCatalogNav.querySelectorAll('.sidebar-catalog-nav__item');
   var sidebarCatalogNavLinks = sidebarCatalogNav.querySelectorAll('.sidebar-catalog-nav__link');
 

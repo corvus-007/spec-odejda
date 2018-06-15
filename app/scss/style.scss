@@ -12,11 +12,13 @@
 // Vendors
 @import "../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox";
 @import "../../node_modules/tippy.js/dist/tippy";
+// @import "../../node_modules/accordionjs/accordion";
 
 // Blocks
 @import "blocks/button";
 @import "blocks/form";
 @import "blocks/input";
+@import "blocks/counter";
 @import "blocks/table";
 @import "blocks/popup";
 @import "blocks/breadcrumbs";
@@ -25,8 +27,8 @@
 @import "blocks/common-header";
 @import "blocks/common-title";
 @import "blocks/common-body";
-@import "blocks/custom-ol";
-@import "blocks/custom-ul";
+// @import "blocks/custom-ol";
+// @import "blocks/custom-ul";
 @import "blocks/header-contacts";
 @import "blocks/header-search";
 @import "blocks/user-list";
@@ -45,6 +47,20 @@
 @import "blocks/product-price";
 @import "blocks/product-cards";
 @import "blocks/product-card";
+// @import "blocks/product-characteristics";
+@import "blocks/product-definition-list";
+@import "blocks/product-inline-list";
+@import "blocks/product-detail-main-image";
+@import "blocks/product-detail-tabs";
+@import "blocks/product-table";
+@import "blocks/product-detail-links-list";
+@import "blocks/product-detail-accordion";
+@import "blocks/product-detail";
+@import "blocks/cart-item";
+@import "blocks/cart-list";
+@import "blocks/cart-info";
+@import "blocks/cart-actions";
+@import "blocks/cart";
 @import "blocks/sidebar";
 @import "blocks/sidebar-catalog-nav";
 @import "blocks/sidebar-category-nav";

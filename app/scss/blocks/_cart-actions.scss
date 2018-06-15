@@ -1,0 +1,28 @@
+.cart-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: -10px;
+  margin-bottom: -10px;
+}
+
+.cart-actions__item {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.cart-actions__to-shop {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @include mq-max(567px) {
+    margin-left: auto;
+  }
+}
+
+.cart-actions__to-clear-car {
+  margin-left: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}

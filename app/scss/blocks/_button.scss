@@ -6,7 +6,7 @@
   padding: 10px;
   font-weight: 800;
   font-size: rem(14);
-  line-height: normal;
+  line-height: 1.6;
   font-family: $primary-font;
   text-align: center;
   text-decoration: none;
@@ -34,6 +34,42 @@
   &:active {
     color: #ffffff;
     background-color: darken($accent-color, 6%);
+  }
+
+  &--fill {
+    color: #ffffff;
+    background-color: $accent-color;
+  }
+
+  &--danger {
+    color: $danger-color;
+
+    &:hover,
+    &:focus {
+      color: #ffffff;
+      background-color: lighten($danger-color, 6%);
+    }
+
+    &:active {
+      color: #ffffff;
+      background-color: darken($danger-color, 6%);
+    }
+  }
+
+  &--danger-fill {
+    color: #ffffff;
+    background-color: $danger-color;
+
+    &:hover,
+    &:focus {
+      color: #ffffff;
+      background-color: lighten($danger-color, 6%);
+    }
+
+    &:active {
+      color: #ffffff;
+      background-color: darken($danger-color, 6%);
+    }
   }
 }
 

@@ -1,0 +1,27 @@
+.product-table {
+  font-size: rem(16);
+
+  th,
+  td {
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
+  tbody {
+    vertical-align: middle;
+  }
+
+  @include mq-max(480px) {
+    .counter__input {
+      min-width: 3ch;
+    }
+
+    .product-price {
+      font-size: rem(16);
+    }
+  }
+}

@@ -1,0 +1,4 @@
+.product-detail-main-image {
+  @include make-fit-object(300, 430, contain);
+
+}

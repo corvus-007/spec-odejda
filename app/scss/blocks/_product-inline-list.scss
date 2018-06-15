@@ -1,0 +1,11 @@
+.product-inline-list {
+  @include clear-list();
+
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -8px;
+}
+
+.product-inline-list__item {
+  margin-right: 8px;
+}

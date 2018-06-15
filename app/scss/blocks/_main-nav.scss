@@ -139,7 +139,7 @@
     transform: translateY(15px);
     pointer-events: none;
     opacity: 0;
-    transition: $duration * 1.5;
+    transition: $duration;
 
     .main-nav__item:hover & {
       opacity: 1;

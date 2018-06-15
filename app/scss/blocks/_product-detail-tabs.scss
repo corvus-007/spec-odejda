@@ -1,0 +1,35 @@
+.product-detail-tabs {
+
+}
+
+.product-detail-tabs__menu {
+  @include clear-list();
+
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.product-detail-tabs__menu-item {
+  flex-grow: 1;
+}
+
+.product-detail-tabs__menu-link {
+  display: block;
+  padding: 12px;
+  font-weight: 700;
+  font-size: rem(20);
+  text-align: center;
+  text-decoration: none;
+  color: $base-color;
+  border-bottom: 2px solid #f0f0f0;
+  transition: $duration;
+
+  .product-detail-tabs__menu-item.active & {
+    border-color: $accent-color;
+  }
+}
+
+.product-detail-tabs__pane {
+
+}

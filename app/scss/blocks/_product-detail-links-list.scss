@@ -1,0 +1,18 @@
+.product-detail-links-list {
+  @include clear-list();
+}
+
+.product-detail-links-list__item {
+
+}
+
+.product-detail-links-list__link {
+  text-decoration: none;
+  border-bottom: 1px solid rgba($link-color, 0.1);
+  transition: $duration * 1.5;
+
+  &:hover,
+  &:focus {
+    border-bottom-color: $link-color;
+  }
+}

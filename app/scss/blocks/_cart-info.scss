@@ -1,0 +1,15 @@
+.cart-info {
+  @include clear-list();
+
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: $gutter;
+  color: $muted-color;
+}
+
+.cart-info__item {
+  margin-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: rem(16);
+}

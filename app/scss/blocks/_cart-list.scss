@@ -1,0 +1,41 @@
+.cart-list {
+  @include mq-max(666px) {
+    display: block;
+  }
+}
+
+.cart-list__head {
+  @include mq-max(666px) {
+    display: none;
+  }
+}
+
+.cart-list__body {
+
+  @include mq-max(666px) {
+    display: block;
+  }
+
+  @include mq-min(768px) {
+    font-size: rem(16);
+  }
+}
+
+.cart-list__item {
+  @include mq-max(666px) {
+    display: block;
+    border-bottom: 4px solid $light-color;
+
+    td {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+
+      &::before {
+        content: attr(data-th);
+        min-width: 130px;
+        font-weight: 600;
+      }
+    }
+  }
+}

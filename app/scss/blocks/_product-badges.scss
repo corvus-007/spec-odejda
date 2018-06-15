@@ -6,9 +6,11 @@
   letter-spacing: 0.025em;
   text-transform: uppercase;
   color: #616161;
+  margin-bottom: -6px;
 }
 
 .product-badges__item {
+  margin-bottom: 6px;
   padding: 4px 8px;
   border-radius: $border-radius;
   background-color: #eee;

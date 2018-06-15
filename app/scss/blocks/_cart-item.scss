@@ -1,0 +1,34 @@
+.cart-item {
+  vertical-align: middle;
+}
+
+.cart-item__name {
+  max-width: 440px;
+}
+
+.cart-item__vendor-code {
+  display: block;
+  color: $muted-color;
+}
+
+.cart-item__counter {
+
+}
+
+.cart-item__to-delete {
+  color: $base-color;
+  background-color: transparent;
+  opacity: 0.25;
+  transition: opacity $duration;
+
+  &:hover,
+  &:focus {
+    color: $base-color;
+    background-color: transparent;
+    opacity: 1;
+  }
+}
+
+.cart-item__to-delete-icon {
+
+}

@@ -26,7 +26,9 @@
   },
   "dependencies": {
     "@fancyapps/fancybox": "^3.3.5",
+    "accordionjs": "^2.1.1",
     "svg4everybody": "^2.1.9",
+    "tabslet": "^1.7.3",
     "tippy.js": "^2.5.2"
   }
 }

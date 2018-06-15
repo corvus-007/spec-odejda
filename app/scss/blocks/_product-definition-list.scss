@@ -1,0 +1,16 @@
+.product-definition-list {
+  margin: 0;
+}
+
+.product-definition-list__key {
+  float: left;
+  clear: left;
+  margin-right: 5px;
+  font-weight: 600;
+  color: $muted-color;
+}
+
+.product-definition-list__value {
+  margin: 0;
+  font-weight: 500;
+}

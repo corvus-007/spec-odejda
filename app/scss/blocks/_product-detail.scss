@@ -1,0 +1,131 @@
+.product-detail {
+  position: relative;
+  padding-top: 80px;
+
+  @include mq-min(1024px) {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 0;
+  }
+}
+
+.product-detail__left {
+  @include mq-min(1024px) {
+    max-width: 350px;
+    width: 35%;
+    margin-right: $gutter * 2;
+    flex-shrink: 0;
+  }
+
+  @include mq-min(1160px) {
+    width: 50%;
+  }
+}
+
+.product-detail__right {
+  flex-grow: 1;
+}
+
+.product-detail__box {
+  margin-bottom: $gutter;
+}
+
+.product-detail__main-image {
+
+  @include mq-max(1023px) {
+    max-height: 600px;
+  }
+}
+
+.product-detail__caption {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: rem(20);
+}
+
+.product-detail__header {
+  margin-bottom: $gutter / 2;
+
+  @include mq-max(1023px) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 0;
+  }
+}
+
+.product-detail__title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: rem(34);
+  line-height: 1.15;
+}
+
+.product-detail__badges {
+  float: right;
+  margin-top: 6px;
+  margin-left: 10px;
+  font-size: rem(16);
+}
+
+.product-detail__vendor-code {
+  display: inline-block;
+  color: $muted-color;
+  font-size: rem(22);
+  vertical-align: middle;
+}
+
+.product-detail__price-wrapper {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: $gutter;
+  padding-top: 8px;
+  padding-bottom: 10px;
+  line-height: 1.15;
+  border-top: 1px solid $light-color;
+  border-bottom: 1px solid $light-color;
+
+  .product-detail__caption {
+    margin-bottom: 0;
+    margin-right: 5px;
+    color: $muted-color;
+  }
+}
+
+.product-detail__price {
+  margin-left: 10px;
+  font-weight: 700;
+  font-size: rem(38);
+
+  .product-price__sum--old {
+    margin-left: 5px;
+  }
+}
+
+.product-detail__once-option {
+  display: flex;
+  align-items: baseline;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.product-detail__more-options {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.product-detail__once-option-unit {
+  margin-left: 10px;
+}
+
+.product-detail__add-to-cart {
+  display: flex;
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-size: rem(16);
+}

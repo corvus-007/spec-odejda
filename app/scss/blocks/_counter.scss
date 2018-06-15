@@ -1,0 +1,40 @@
+.counter {
+  display: inline-flex;
+  max-width: 130px;
+  border: 1px solid $light-color;
+  border-radius: $border-radius;
+  overflow: hidden;
+  transition: $duration;
+
+  &:hover {
+    border-color: rgba($accent-color, 0.4);
+  }
+
+  &:focus-within {
+    border-color: $accent-color;
+  }
+}
+
+.counter__control {
+  width: 38px;
+  padding: 8px;
+  flex-shrink: 0;
+  background-color: #ffffff;
+  border: none;
+}
+
+.counter__input {
+  min-width: 4.5ch;
+  max-width: none;
+  padding: 4px;
+  font-size: rem(20);
+  text-align: center;
+  border: none;
+
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+      -moz-appearance: none;
+      appearance: none;
+      margin: 0;
+  }
+}

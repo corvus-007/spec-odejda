@@ -1,7 +1,14 @@
 document.addEventListener('DOMContentLoaded', function () {
+  'use strict';
+
   svg4everybody();
-  console.log('script.js');
+
+
+  $('.product-detail-tabs').tabslet();
+
+  $('.product-detail-accordion').accordionjs();
+
   tippy('[title]', {
-    size: 'small'
+    // size: 'small'
   })
 });
