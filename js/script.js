@@ -10,5 +10,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
   tippy('[title]', {
     // size: 'small'
-  })
+  });
+
+  $(".js-date-pick").flatpickr({
+    defaultDate: new Date(),
+    "locale": 'ru'
+  });
 });
