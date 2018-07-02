@@ -1,0 +1,12 @@
+.cart-detail-order {
+
+  @include mq-min(768px) {
+    display: flex;
+  }
+}
+
+.cart-detail-order__section {
+  @include mq-min(768px) {
+    @include calc-column-width(2);
+  }
+}

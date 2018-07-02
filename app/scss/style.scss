@@ -12,12 +12,15 @@
 // Vendors
 @import "../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox";
 @import "../../node_modules/tippy.js/dist/tippy";
-// @import "../../node_modules/accordionjs/accordion";
+@import "../../node_modules/flatpickr/dist/flatpickr";
 
 // Blocks
 @import "blocks/button";
 @import "blocks/form";
 @import "blocks/input";
+@import "blocks/field";
+@import "blocks/checkbox";
+@import "blocks/radiobox";
 @import "blocks/counter";
 @import "blocks/table";
 @import "blocks/popup";
@@ -60,6 +63,7 @@
 @import "blocks/cart-list";
 @import "blocks/cart-info";
 @import "blocks/cart-actions";
+@import "blocks/cart-detail-order";
 @import "blocks/cart";
 @import "blocks/sidebar";
 @import "blocks/sidebar-catalog-nav";

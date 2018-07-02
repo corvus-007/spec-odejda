@@ -1,14 +1,22 @@
 .input {
   padding: 12px;
   width: 100%;
+  max-height: 150px;
+  resize: vertical;
   outline: none;
   border: 1px solid transparent;
+  border: 1px solid $light-color;
   background: #ffffff;
   font: inherit;
   font-size: rem(16);
   line-height: normal;
   box-sizing: border-box;
   transition: 0.3s;
+
+  &:hover,
+  &:focus {
+    border-color: darken($light-color, 10%);
+  }
 
   &::placeholder {
     color: $base-color;

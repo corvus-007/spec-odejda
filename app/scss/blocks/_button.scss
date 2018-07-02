@@ -36,6 +36,10 @@
     background-color: darken($accent-color, 6%);
   }
 
+  &--fluid {
+    width: 100%;
+  }
+
   &--fill {
     color: #ffffff;
     background-color: $accent-color;
