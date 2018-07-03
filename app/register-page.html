@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>Регистрация — Спец_Одежда</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="site-wrapper">
+    @@include('blocks/main-header.html')
+    @@include('blocks/main-nav.html')
+
+    <div class="main-layout container">
+      <div class="main-layout__row">
+        <ul class="main-layout__breadcrumbs breadcrumbs">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Мой кабинет</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link">Регистрация</a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-layout__row">
+        <main class="main-layout__main main-content">
+          <article class="main-content__section cart">
+            <h1>Регистрация</h1>
+
+            <form class="register-form" action="" method="post">
+              <fieldset class="form-section">
+                <h3 class="form-title">Пользователь</h3>
+                <label class="field field--required">
+                  <span class="field__label">Фамилия</span>
+                  <div class="field__control">
+                    <input class="field__input input" type="text" name="surname" required>
+                  </div>
+                </label>
+                <label class="field field--required">
+                  <span class="field__label">Имя</span>
+                  <div class="field__control">
+                    <input class="field__input input" type="text" name="name" required>
+                  </div>
+                </label>
+                <label class="field">
+                  <span class="field__label">Отчество</span>
+                  <div class="field__control">
+                    <input class="field__input input" type="text" name="middleName">
+                  </div>
+                </label>
+                <label class="field">
+                  <span class="field__label">Должность</span>
+                  <div class="field__control">
+                    <input class="field__input input" type="text" name="post">
+                  </div>
+                </label>
+                <label class="field field--required">
+                  <span class="field__label">Телефон</span>
+                  <div class="field__control">
+                    <input class="field__input input" type="tel" name="phone" required>
+                  </div>
+                </label>
+                <label class="field field--required">
+                  <span class="field__label">E-mail</span>
+                  <div class="field__control">
+                    <input class="field__input input" type="email" name="email" required>
+                  </div>
+                </label>
+              </fieldset>
+              <fieldset class="form-section">
+                <h3 class="form-title">Организация</h3>
+                <label class="field field--required">
+                  <span class="field__label">Офис обслуживания</span>
+                  <div class="field__control">
+                    <select class="select" name="service-office">
+                      <option value="Москва">Москва</option>
+                      <option value="Барнаул">Барнаул</option>
+                      <option value="Новосибирск">Новосибирск</option>
+                      <option value="Кемерово">Кемерово</option>
+                      <option value="Краснодар">Краснодар</option>
+                    </select>
+                  </div>
+                </label>
+                <label class="field field--required">
+                  <span class="field__label">Название компании</span>
+                  <div class="field__control">
+                    <input class="field__input input" type="text" name="companyName" required>
+                  </div>
+                </label>
+                <label class="field field--required">
+                  <span class="field__label">ИНН</span>
+                  <div class="field__control">
+                    <input class="field__input input" type="text" name="inn" required>
+                  </div>
+                </label>
+
+                <div class="form-actions form-actions--justify-center">
+                  <button class="button" type="button">Заполнить данные компании</button>
+                </div>
+              </fieldset>
+
+              <label class="field field--required">
+                <span class="field__label">Пароль</span>
+                <div class="field__control">
+                  <input class="field__input input" type="password" name="password" required>
+                </div>
+              </label>
+              <label class="field field--required">
+                <span class="field__label">Подтверждение пароля</span>
+                <div class="field__control">
+                  <input class="field__input input" type="password" name="confirmPassword" required>
+                </div>
+              </label>
+
+              <div class="field">
+                <div class="field__control">
+                  <label class="field__checkbox checkbox">
+                    <input class="checkbox__input" type="checkbox" name="acceptTerms" value="1" checked required>
+                    <span class="checkbox__indicator">Я принимаю условия политики конфиденциальности и даю согласие на обработку персональных данных.</span>
+                  </label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="field__control">
+                  <label class="field__checkbox checkbox">
+                    <input class="checkbox__input" type="checkbox" name="rememberMe" value="1">
+                    <span class="checkbox__indicator">Запомнить меня на этом компьютере</span>
+                  </label>
+                </div>
+              </div>
+              <button class="button button--fill" type="submit">Зарегистрироваться</button>
+            </form>
+          </article>
+        </main>
+      </div>
+    </div>
+
+    @@include('blocks/main-footer.html')
+  </div>
+  @@include('blocks/site-scripts.html')
+</body>
+</html>
