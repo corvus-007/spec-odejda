@@ -449,9 +449,9 @@
                   <li>управление подпиской;</li>
                   <li>участие в партнерских программах.</li>
                 </ul>
-                <p><a class="button button--fill button--fluid" href="">Зарегестрироваться</a></p>
+                <p><a class="button button--fill button--fluid" href="register-page.html">Зарегестрироваться</a></p>
                 <p class="text-center">или</p>
-                <p><a class="button button--fill button--fluid" href="">Войти</a></p>
+                <p><a class="button button--fill button--fluid" href="#enter-popup" data-fancybox>Войти</a></p>
               </section>
             </div>
           </article>
@@ -535,6 +535,26 @@
         </div>
       </div>
     </footer>
+
+    <div class="popup" id="enter-popup" hidden>
+      <h2 class="popup__title">Войти</h2>
+      <form class="login-form" id="login-form" action="login" method="post" target="_blank">
+        <div class="field">
+          <label class="field__label" for="field-login-email">E-mail</label>
+          <div class="field__control">
+            <input class="field__input input" id="field-login-email" type="email" name="email" autocomplete="off" required>
+          </div>
+        </div>
+        <div class="field">
+          <label class="field__label" for="field-login-password">Пароль</label>
+          <a class="login-form__forgot-password" href="" tabindex="-1">Забыли пароль?</a>
+          <div class="field__control">
+            <input class="field__input input" id="field-login-password" name="loginPassword" type="password" autocomplete="off" required>
+          </div>
+        </div>
+        <button class="submit-button button button--fill button--fluid" type="submit">Отправить</button>
+      </form>
+    </div>
 
   </div>
   <script src="js/jquery-3.2.1.min.js"></script>

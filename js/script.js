@@ -3,6 +3,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
   svg4everybody();
 
+  $('[data-fancybox]').fancybox({
+    buttons: [
+      'close'
+    ]
+  });
+  $.fancybox.defaults.animationEffect = "zoom";
+
 
   $('.product-detail-tabs').tabslet();
 
