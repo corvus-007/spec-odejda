@@ -1,6 +1,7 @@
 .main-layout {
   padding-top: $gutter;
   padding-bottom: $gutter;
+  flex-grow: 1;
 }
 
 .main-layout__row {
