@@ -19,11 +19,12 @@
   user-select: none;
   outline: none;
   transition: $duration;
+  color: #ffffff;
 
   &:hover,
   &:focus {
-    color: $accent-color;
-    background-color: rgba(#ffffff, 0.25);
+    color: #ffffff;
+    background-color: rgba(#ffffff, 0.1);
   }
 }
 

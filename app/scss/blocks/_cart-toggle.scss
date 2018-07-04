@@ -9,11 +9,12 @@
   outline: none;
   user-select: none;
   transition: $duration;
+  color: #ffffff;
 
   &:hover,
   &:focus {
     color: #fff;
-    background-color: $accent-color;
+    background-color: rgba(#ffffff, 0.1);
   }
 }
 
