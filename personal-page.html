@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="format-detection" content="telephone=no">
-  <title>Регистрация — Спец_Одежда</title>
+  <title>Мой кабинет — Спец_Одежда</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -194,7 +194,7 @@
             <a class="breadcrumbs__link" href="#">Главная</a>
           </li>
           <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link" href="personal-page.html">Мой кабинет</a>
+            <a class="breadcrumbs__link" href="#">Мой кабинет</a>
           </li>
           <li class="breadcrumbs__item">
             <a class="breadcrumbs__link">Регистрация</a>
@@ -204,113 +204,21 @@
       <div class="main-layout__row">
         <main class="main-layout__main main-content">
           <article class="main-content__section">
-            <h1>Регистрация</h1>
-
-            <form class="register-form" action="" method="post">
-              <fieldset class="form-section">
-                <h3 class="form-title">Пользователь</h3>
-                <label class="field field--required">
-                  <span class="field__label">Фамилия</span>
-                  <div class="field__control">
-                    <input class="field__input input" type="text" name="surname" required>
-                  </div>
-                </label>
-                <label class="field field--required">
-                  <span class="field__label">Имя</span>
-                  <div class="field__control">
-                    <input class="field__input input" type="text" name="name" required>
-                  </div>
-                </label>
-                <label class="field">
-                  <span class="field__label">Отчество</span>
-                  <div class="field__control">
-                    <input class="field__input input" type="text" name="middleName">
-                  </div>
-                </label>
-                <label class="field">
-                  <span class="field__label">Должность</span>
-                  <div class="field__control">
-                    <input class="field__input input" type="text" name="post">
-                  </div>
-                </label>
-                <label class="field field--required">
-                  <span class="field__label">Телефон</span>
-                  <div class="field__control">
-                    <input class="field__input input" type="tel" name="phone" required>
-                  </div>
-                </label>
-                <label class="field field--required">
-                  <span class="field__label">E-mail</span>
-                  <div class="field__control">
-                    <input class="field__input input" type="email" name="email" required>
-                  </div>
-                </label>
-              </fieldset>
-              <fieldset class="form-section">
-                <h3 class="form-title">Организация</h3>
-                <label class="field field--required">
-                  <span class="field__label">Офис обслуживания</span>
-                  <div class="field__control">
-                    <select class="select" name="service-office">
-                      <option value="Москва">Москва</option>
-                      <option value="Барнаул">Барнаул</option>
-                      <option value="Новосибирск">Новосибирск</option>
-                      <option value="Кемерово">Кемерово</option>
-                      <option value="Краснодар">Краснодар</option>
-                    </select>
-                  </div>
-                </label>
-                <label class="field field--required">
-                  <span class="field__label">Название компании</span>
-                  <div class="field__control">
-                    <input class="field__input input" type="text" name="companyName" required>
-                  </div>
-                </label>
-                <label class="field field--required">
-                  <span class="field__label">ИНН</span>
-                  <div class="field__control">
-                    <input class="field__input input" type="text" name="inn" required>
-                  </div>
-                </label>
-
-                <div class="form-actions">
-                  <button class="button" type="button">Заполнить данные компании</button>
-                </div>
-              </fieldset>
-
-              <label class="field field--required">
-                <span class="field__label">Пароль</span>
-                <div class="field__control">
-                  <input class="field__input input" type="password" name="password" required>
-                </div>
-              </label>
-              <label class="field field--required">
-                <span class="field__label">Подтверждение пароля</span>
-                <div class="field__control">
-                  <input class="field__input input" type="password" name="confirmPassword" required>
-                </div>
-              </label>
-
-              <div class="field">
-                <div class="field__control">
-                  <label class="field__checkbox checkbox">
-                    <input class="checkbox__input" type="checkbox" name="acceptTerms" value="1" checked required>
-                    <span class="checkbox__indicator">Я принимаю условия политики конфиденциальности и даю согласие на обработку персональных данных.</span>
-                  </label>
-                </div>
-              </div>
-              <div class="field">
-                <div class="field__control">
-                  <label class="field__checkbox checkbox">
-                    <input class="checkbox__input" type="checkbox" name="rememberMe" value="1">
-                    <span class="checkbox__indicator">Запомнить меня на этом компьютере</span>
-                  </label>
-                </div>
-              </div>
-              <div class="form-actions">
-                <button class="button button--fill" type="submit">Зарегистрироваться</button>
-              </div>
-            </form>
+            <h1>Регистрация / вход</h1>
+            <h2>Заказываете регулярно?</h2>
+            <p>Вы можете войти под своей учетной записью, либо зарегистрироваться у нас на сайте и получить дополнительные возможности:</p>
+            <ul>
+              <li>управление заказами;</li>
+              <li>отслеживание статусов заказов;</li>
+              <li>история покупок;</li>
+              <li>управление подпиской;</li>
+              <li>участие в партнерских программах.</li>
+            </ul>
+            <p>
+              <a class="button button--fill" href="register-page.html">Зарегестрироваться</a>
+              &nbsp;&nbsp;или&nbsp;&nbsp;
+              <a class="button button--fill" href="#enter-popup" data-fancybox>Войти</a>
+            </p>
           </article>
         </main>
       </div>
@@ -392,6 +300,26 @@
         </div>
       </div>
     </footer>
+
+    <div class="popup" id="enter-popup" hidden>
+      <h2 class="popup__title">Войти</h2>
+      <form class="login-form" id="login-form" action="login" method="post" target="_blank">
+        <div class="field">
+          <label class="field__label" for="field-login-email">E-mail</label>
+          <div class="field__control">
+            <input class="field__input input" id="field-login-email" type="email" name="email" autocomplete="off" required>
+          </div>
+        </div>
+        <div class="field">
+          <label class="field__label" for="field-login-password">Пароль</label>
+          <a class="login-form__forgot-password" href="" tabindex="-1">Забыли пароль?</a>
+          <div class="field__control">
+            <input class="field__input input" id="field-login-password" name="loginPassword" type="password" autocomplete="off" required>
+          </div>
+        </div>
+        <button class="submit-button button button--fill button--fluid" type="submit">Отправить</button>
+      </form>
+    </div>
 
   </div>
   <script src="js/jquery-3.2.1.min.js"></script>
