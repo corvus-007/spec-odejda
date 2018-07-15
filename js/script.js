@@ -23,4 +23,27 @@ document.addEventListener('DOMContentLoaded', function () {
     defaultDate: new Date(),
     "locale": 'ru'
   });
+
+  var $productItemsAccordion = $('.product-detail__items-accordion');
+  $productItemsAccordion.hide();
+
+  $('.product-detail').one('click', '.product-detail__to-choose', function (event) {
+    event.preventDefault();
+    $(this).hide();
+    $productItemsAccordion.slideDown();
+  });
+
+  $('.js-product-detail-add-to-cart-form').on('submit', function (event) {
+    event.preventDefault();
+    var data = $(this).serializeArray();
+    console.log(data);
+    var jqxhr = $.ajax({
+      url: '',
+      data: data,
+    });
+
+    jqxhr.done(function (response) {
+      console.log(response);
+    });
+  });
 });
