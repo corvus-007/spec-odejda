@@ -3268,12 +3268,51 @@ span.flatpickr-weekday {
 }
 
 .counter__control {
+  position: relative;
   width: 38px;
-  padding: 8px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  padding: 8px;
   background-color: #ffffff;
   border: none;
+}
+
+.counter__control::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 10px;
+  height: 2px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: currentColor;
+}
+
+.counter__control--decrease {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.counter__control--increase {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.counter__control--increase::before {
+  width: 12px;
+}
+
+.counter__control--increase::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 2px;
+  height: 12px;
+  background-color: currentColor;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .counter__input {
@@ -3286,10 +3325,10 @@ span.flatpickr-weekday {
 }
 
 .counter__input::-webkit-inner-spin-button, .counter__input::-webkit-outer-spin-button {
+  margin: 0;
   -moz-appearance: none;
   -webkit-appearance: none;
           appearance: none;
-  margin: 0;
 }
 
 table {
