@@ -72,15 +72,15 @@
 
 .product-detail__vendor-code {
   display: inline-block;
-  color: $muted-color;
   font-size: rem(22);
   vertical-align: middle;
+  color: $muted-color;
 }
 
 .product-detail__price-wrapper {
   display: flex;
   align-items: baseline;
-  margin-bottom: $gutter;
+  margin-bottom: 20px;
   padding-top: 8px;
   padding-bottom: 10px;
   line-height: 1.15;
@@ -104,16 +104,19 @@
   }
 }
 
+.product-detail__items-accordion {
+  margin-top: -20px;
+}
+
+.product-detail__items-accordion-section {
+  &:first-child {
+    border-top: none;
+  }
+}
+
 .product-detail__once-option {
   display: flex;
   align-items: baseline;
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
-
-.product-detail__more-options {
-  margin-top: 25px;
-  margin-bottom: 25px;
 }
 
 .product-detail__once-option-unit {
@@ -123,8 +126,7 @@
 .product-detail__add-to-cart {
   display: flex;
   width: 100%;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: 20px;
   padding-top: 16px;
   padding-bottom: 16px;
   font-size: rem(16);
