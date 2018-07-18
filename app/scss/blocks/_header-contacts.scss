@@ -12,11 +12,11 @@
   font-weight: 600;
   font-size: rem(18);
   text-decoration: none;
-  color: #ffffff;
+  color: $base-color;
 
   &:hover,
   &:focus {
-    color: #ffffff;
+    color: $accent-color-2;
   }
 
   b {

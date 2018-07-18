@@ -23,34 +23,14 @@
 }
 
 .catalog-card__imagebox {
-  @include make-fit-object(300, 220);
+  @include make-fit-object(260, 390, contain);
 
   transition: $duration * 1.5;
-
-  &::before {
-    padding-top: 50%;
-  }
 
   .catalog-card__wraplink:hover &,
   .catalog-card__wraplink:focus & {
     filter: saturate(120%);
   }
-
-  @include mq-min(568px) {
-    &::before {
-      padding-top: 73%;
-    }
-  }
-
-  @include mq-range(768px, 960px) {
-    &::before {
-      padding-top: 50%;
-    }
-  }
-}
-
-.catalog-card__image {
-
 }
 
 .catalog-card__title {
