@@ -1,0 +1,17 @@
+.contacts-location {
+
+}
+
+.contacts-location__list {
+  @include clear-list();
+
+  @include mq-min(1024px) {
+    display: flex;
+  }
+}
+
+.contacts-location__item {
+  @include mq-min(1024px) {
+    @include calc-column-width(2);
+  }
+}

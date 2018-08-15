@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>Контакты — Спец_Одежда</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="site-wrapper">
+    @@include('blocks/main-header.html')
+    @@include('blocks/main-nav.html')
+
+    <div class="main-layout container">
+      <div class="main-layout__row">
+        <ul class="main-layout__breadcrumbs breadcrumbs">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Каталог</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link">Спецодежда</a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-layout__row">
+        <main class="main-layout__main main-content">
+          <article class="main-content__section page-article contacts">
+            <h1 class="page-article__title">Контакты</h1>
+            <h2 class="page-article__subtitle">Контактная информация ООО «БрянскСпецСИЗ» (ООО «БСС»)</h2>
+            <div class="contacts__location contacts-location">
+              <ul class="contacts-location__list">
+                <li class="contacts-location__item">
+                  <p>
+                    <b>Адрес офиса:</b>
+                  </p>
+                  <p class="contacts-location__address">
+                    <svg width="16" height="16">
+                      <use xlink:href="images/symbols.svg#pin"></use>
+                    </svg>
+                    241035, г. Брянск, улица Кромская 101, офисное здание, 3 этаж, офис 17
+                  </p>
+                </li>
+                <li class="contacts-location__item">
+                  <p>
+                    <b>Адрес склада:</b>
+                  </p>
+                  <p class="contacts-location__address">
+                    <svg width="16" height="16">
+                      <use xlink:href="images/symbols.svg#pin"></use>
+                    </svg>
+                    241035, г. Брянск, улица Кромская 101, склад № 1
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            <h2>Контакты сотрудников ООО «БрянскСпецСИЗ»:</h2>
+            <div class="contacts__persons contacts-persons">
+              <div class="contacts-persons__item">
+                <p>
+                  <svg width="16" height="16">
+                    <use xlink:href="images/symbols.svg#account"></use>
+                  </svg>
+                  <b>Директор</b> – Костин Максим Андреевич</p>
+                <p>
+                  <svg width="16" height="16">
+                    <use xlink:href="images/symbols.svg#at"></use>
+                  </svg>
+                  <b>e-mail:</b> <a href="mailto:018328@mail.ru">018328@mail.ru</a></p>
+                <p>
+                  <svg width="16" height="16">
+                    <use xlink:href="images/symbols.svg#phone"></use>
+                  </svg>
+                  <b>тел.:</b> <a href="tel:+7 (4832) 952-969-87-30">+7 (4832) 952-969-87-30</a></p>
+              </div>
+              <div class="contacts-persons__item">
+                <p>
+                  <svg width="16" height="16">
+                    <use xlink:href="images/symbols.svg#account"></use>
+                  </svg>
+                  <b>Менеджер по продажам</b> – Горяница Елена
+                <p>
+                  <svg width="16" height="16">
+                    <use xlink:href="images/symbols.svg#at"></use>
+                  </svg>
+                  <b>e-mail:</b> <a href="mailto:89003621977@mail.ru">89003621977@mail.ru</a>
+                <p>
+                  <svg width="16" height="16">
+                    <use xlink:href="images/symbols.svg#phone"></use>
+                  </svg>
+                  <b>тел.:</b> <a href="tel:+7(4832) 900-362-19-77">+7(4832) 900-362-19-77</a>
+              </div>
+              <div class="contacts-persons__item">
+                <p>
+                  <svg width="16" height="16">
+                    <use xlink:href="images/symbols.svg#account"></use>
+                  </svg>
+                  <b>Менеджер по продажам</b> – Никишов Михаил
+                <p>
+                  <svg width="16" height="16">
+                    <use xlink:href="images/symbols.svg#at"></use>
+                  </svg>
+                  <b>e-mail:</b> <a href="mailto:89003621955@mail.ru">89003621955@mail.ru</a>
+                <p>
+                  <svg width="16" height="16">
+                    <use xlink:href="images/symbols.svg#phone"></use>
+                  </svg>
+                  <b>тел.:</b> <a href="tel:+7(4832) 900-362-19-55">+7(4832) 900-362-19-55</a>
+              </div>
+            </div>
+
+            <p class="contacts__common-phone">Единый контактный телефон: <a href="tel:+7(4832) 30-28-18">+7(4832) 30-28-18</a></p>
+          </article>
+        </main>
+
+        <!-- Sidebar -->
+        @@include('blocks/sidebar.html')
+      </div>
+    </div>
+
+    @@include('blocks/main-footer.html')
+  </div>
+  @@include('blocks/site-scripts.html')
+</body>
+</html>

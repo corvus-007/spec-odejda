@@ -1,0 +1,29 @@
+.contacts {
+
+}
+
+.contacts__section {
+
+}
+
+.contacts__location {
+
+}
+
+.contacts-location__address {
+  display: flex;
+  align-items: flex-basis;
+
+  svg {
+    flex-shrink: 0;
+    margin-right: 8px;
+  }
+}
+
+.contacts__common-phone {
+  font-size: 1.3em;
+
+  a {
+    text-decoration: none;
+  }
+}
