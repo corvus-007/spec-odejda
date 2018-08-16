@@ -7,6 +7,7 @@
   <meta name="format-detection" content="telephone=no">
   <title>Контакты — Спец_Одежда</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 </head>
 <body>
   <div class="site-wrapper">
@@ -28,7 +29,7 @@
         </ul>
       </div>
       <div class="main-layout__row">
-        <main class="main-layout__main main-content">
+        <main class="main-layout__main main-content common-block common-body">
           <article class="main-content__section page-article contacts">
             <h1 class="page-article__title">Контакты</h1>
             <h2 class="page-article__subtitle">Контактная информация ООО «БрянскСпецСИЗ» (ООО «БСС»)</h2>
@@ -36,28 +37,30 @@
               <ul class="contacts-location__list">
                 <li class="contacts-location__item">
                   <p>
-                    <b>Адрес офиса:</b>
-                  </p>
-                  <p class="contacts-location__address">
                     <svg width="16" height="16">
                       <use xlink:href="images/symbols.svg#pin"></use>
                     </svg>
-                    241035, г. Брянск, улица Кромская 101, офисное здание, 3 этаж, офис 17
+                    <b>Адрес офиса:</b>
+                  </p>
+                  <p class="contacts-location__address">
+                    241035, г. Брянск, улица&nbsp;Кромская&nbsp;101, офисное здание, 3&nbsp;этаж, офис 17
                   </p>
                 </li>
                 <li class="contacts-location__item">
                   <p>
-                    <b>Адрес склада:</b>
-                  </p>
-                  <p class="contacts-location__address">
                     <svg width="16" height="16">
                       <use xlink:href="images/symbols.svg#pin"></use>
                     </svg>
-                    241035, г. Брянск, улица Кромская 101, склад № 1
+                    <b>Адрес склада:</b>
+                  </p>
+                  <p class="contacts-location__address">
+                    241035, г.&nbsp;Брянск, улица&nbsp;Кромская&nbsp;101, склад№&nbsp;1
                   </p>
                 </li>
               </ul>
             </div>
+
+            <div class="contacts-map" id="contacts-map" style="height: 400px;"></div>
 
             <h2>Контакты сотрудников ООО «БрянскСпецСИЗ»:</h2>
             <div class="contacts__persons contacts-persons">
@@ -115,6 +118,35 @@
             </div>
 
             <p class="contacts__common-phone">Единый контактный телефон: <a href="tel:+7(4832) 30-28-18">+7(4832) 30-28-18</a></p>
+
+            <div class="contacts__working-time contacts-working-time">
+              <ul class="contacts-working-time__list">
+                <li class="contacts-working-time__item">
+                  <p>
+                    <svg width="16" height="16">
+                      <use xlink:href="images/symbols.svg#clock"></use>
+                    </svg>
+                    <b>
+                    Режим работы офиса:</b>
+                  </p>
+                  <p>Пн – Пт: с 9:00 до 17:00</p>
+                  <p>без перерыва</p>
+                  <p>Суббота, воскресенье – выходной</p>
+                </li>
+                <li class="contacts-working-time__item">
+                  <p>
+                    <svg width="16" height="16">
+                      <use xlink:href="images/symbols.svg#clock"></use>
+                    </svg>
+                    <b>Режим работы склада:</b>
+                  </p>
+                  <p>Пн – Пт: с 9:00 до 17:00</p>
+                  <p>без перерыва</p>
+                  <p>Суббота, воскресенье – выходной</p>
+                </li>
+              </ul>
+            </div>
+
           </article>
         </main>
 

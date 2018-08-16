@@ -1,0 +1,15 @@
+.contacts-working-time {
+
+}
+
+.contacts-working-time__list {
+  @include clear-list();
+}
+
+.contacts-working-time__item {
+  margin-bottom: 20px;
+
+  p {
+    margin: 0;
+  }
+}
