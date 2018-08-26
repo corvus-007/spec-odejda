@@ -14,10 +14,6 @@
     @include calc-column-width(2);
   }
 
-  @include mq-range(768px, 959px) {
-    width: 100%;
-  }
-
   @include mq-range(960px, 1279px) {
     @include calc-column-width(2);
   }
