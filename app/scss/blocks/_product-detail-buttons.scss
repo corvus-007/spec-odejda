@@ -1,0 +1,12 @@
+.product-detail-buttons {
+  @include clear-list();
+
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -8px;
+}
+
+.product-detail-buttons__item {
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
