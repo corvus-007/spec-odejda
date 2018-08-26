@@ -1,0 +1,47 @@
+.sidebar-nav {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.sidebar-nav__list {
+  @include clear-list();
+}
+
+.sidebar-nav__link {
+  display: flex;
+  align-items: center;
+  padding: 5px 15px;
+  font-weight: 600;
+  font-size: 17px;
+  text-decoration: none;
+  color: $muted-color;
+  transition: $duration;
+
+  &::before {
+    content: "▶";
+    margin-right: 8px;
+    flex-shrink: 0;
+    font-size: 12px;
+    transform: translateX(-5px);
+    opacity: 0;
+    transition: $duration;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    &::before {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .sidebar-nav__item--active & {
+    color: $accent-color;
+
+    &::before {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+}
