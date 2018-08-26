@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>Материалы и технологии — Спец_Одежда</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+</head>
+<body>
+  <div class="site-wrapper">
+    @@include('blocks/main-header.html')
+    @@include('blocks/main-nav.html')
+
+    <div class="main-layout container">
+      <div class="main-layout__row">
+        <ul class="main-layout__breadcrumbs breadcrumbs">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Полезная информация</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link">Используемые материалы и технологии</a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-layout__row">
+        <main class="main-layout__main main-content common-block common-body">
+          <article class="main-content__section page-article contacts">
+            <div class="page-article__header">
+              <h1 class="page-article__title">Материалы и технологии</h1>
+            </div>
+            <div class="materials-and-techology-nav">
+              <ul class="materials-and-techology-nav__list">
+                <li class="materials-and-techology-nav__item">
+                  <a class="materials-and-techology-nav__link" href="">
+                    <svg class="materials-and-techology-nav__icon" width="18" height="18">
+                      <use xlink:href="images/symbols.svg#at"></use>
+                    </svg>
+                    Ткани
+                  </a>
+                </li>
+                <li class="materials-and-techology-nav__item">
+                  <a class="materials-and-techology-nav__link" href="">
+                    <svg class="materials-and-techology-nav__icon" width="18" height="18">
+                      <use xlink:href="images/symbols.svg#at"></use>
+                    </svg>
+                    Нити и фурнитура
+                  </a>
+                </li>
+                <li class="materials-and-techology-nav__item">
+                  <a class="materials-and-techology-nav__link" href="">
+                    <svg class="materials-and-techology-nav__icon" width="18" height="18">
+                      <use xlink:href="images/symbols.svg#at"></use>
+                    </svg>
+                    Технологии
+                  </a>
+                </li>
+                <li class="materials-and-techology-nav__item">
+                  <a class="materials-and-techology-nav__link" href="">
+                    <svg class="materials-and-techology-nav__icon" width="18" height="18">
+                      <use xlink:href="images/symbols.svg#at"></use>
+                    </svg>
+                    Утеплитель
+                  </a>
+                </li>
+                <li class="materials-and-techology-nav__item">
+                  <a class="materials-and-techology-nav__link" href="">
+                    <svg class="materials-and-techology-nav__icon" width="18" height="18">
+                      <use xlink:href="images/symbols.svg#at"></use>
+                    </svg>
+                    Конструктивные особенности обуви
+                  </a>
+                </li>
+                <li class="materials-and-techology-nav__item">
+                  <a class="materials-and-techology-nav__link" href="">
+                    <svg class="materials-and-techology-nav__icon" width="18" height="18">
+                      <use xlink:href="images/symbols.svg#at"></use>
+                    </svg>
+                    Методы крепления низа обуви
+                  </a>
+                </li>
+                <li class="materials-and-techology-nav__item">
+                  <a class="materials-and-techology-nav__link" href="">
+                    <svg class="materials-and-techology-nav__icon" width="18" height="18">
+                      <use xlink:href="images/symbols.svg#at"></use>
+                    </svg>
+                    Материалы для производства подошвы обуви
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </article>
+        </main>
+
+        <!-- Sidebar -->
+        @@include('blocks/sidebar.html')
+      </div>
+    </div>
+
+    @@include('blocks/main-footer.html')
+  </div>
+  @@include('blocks/site-scripts.html')
+</body>
+</html>

@@ -1,0 +1,62 @@
+.materials-and-techology-nav {
+
+}
+
+.materials-and-techology-nav__list {
+  @include clear-list();
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.materials-and-techology-nav__item {
+  width: 100%;
+  margin-bottom: 30px;
+
+  @include mq-range(568px, 767px) {
+    @include calc-column-width(2);
+  }
+
+  @include mq-min(960px) {
+    @include calc-column-width(2);
+  }
+}
+
+.materials-and-techology-nav__link {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  font-weight: 700;
+  font-size: rem(18);
+  line-height: 1.15;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $base-color;
+  background-color: #eeeeee;
+  border-radius: $border-radius;
+  transition: $duration * 1.5;
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: $accent-color-2;
+  }
+
+  @include mq-min(1280px) {
+    padding: 20px;
+  }
+}
+
+.materials-and-techology-nav__icon {
+  width: 48px;
+  height: 48px;
+  margin-right: 15px;
+  flex-shrink: 0;
+  fill: currentColor;
+
+  @include mq-min(1280px) {
+    width: 64px;
+    height: 64px;
+    margin-right: 20px;
+  }
+}
