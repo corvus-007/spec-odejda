@@ -4,6 +4,12 @@
 
 .sidebar__module {
   margin-bottom: $gutter;
+
+  @include mq-min(768px) {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .sidebar__catalog-nav {
