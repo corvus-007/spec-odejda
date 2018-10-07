@@ -1,0 +1,35 @@
+.sort-form {
+  flex-grow: 1;
+
+  @include mq-min(568px) {
+    display: flex;
+  }
+}
+
+.sort-form__field {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+
+  @include mq-min(568px) {
+    max-width: 220px;
+    margin-right: $gutter;
+    margin-bottom: 0;
+  }
+}
+
+.sort-form__label {
+  margin-right: 5px;
+  margin-bottom: 0;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.sort-form__control {
+
+}
+
+.sort-form__select {
+  padding: 8px;
+  font-size: 14px;
+}

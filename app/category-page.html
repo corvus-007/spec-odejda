@@ -116,6 +116,33 @@
               <h2 class="common-title">Спецодежда</h2>
             </div>
             <div class="common-body common-body--not-x-pad">
+              <div class="dashboard">
+                <form class="dashboard__sort-form sort-form" action="">
+                  <label class="sort-form__field field">
+                    <span class="sort-form__label field__label">Сортировка:</span>
+                    <div class="sort-form__control field__control">
+                      <select class="sort-form__select select" name="sort_by">
+                        <option value="popularity">По популярности</option>
+                        <option value="price_asc">По возрастанию цены</option>
+                        <option value="price_desc">По убыванию цены</option>
+                        <option value="name">По названию</option>
+                      </select>
+                    </div>
+                  </label>
+                  <label class="sort-form__field filed">
+                    <span class="sort-form__label field__label">Статус:</span>
+                    <div class="sort-form__control field__control">
+                      <select class="sort-form__select select" name="sort_status">
+                        <option value="">Все</option>
+                        <option value="new">Новинка</option>
+                        <option value="coming">Скоро в продаже</option>
+                        <option value="limit">К-во ограничено</option>
+                        <option value="order">Под заказ</option>
+                      </select>
+                    </div>
+                  </label>
+                </form>
+              </div>
               <ul class="product-cards">
                 <li class="product-cards__item product-card">
                   <a class="product-card__wraplink" href="product-page.html">
