@@ -12,7 +12,6 @@
   align-items: center;
 
   @include mq-min(568px) {
-    max-width: 220px;
     margin-right: $gutter;
     margin-bottom: 0;
   }
@@ -26,7 +25,7 @@
 }
 
 .sort-form__control {
-
+  max-width: 200px;
 }
 
 .sort-form__select {
