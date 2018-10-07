@@ -11,7 +11,7 @@
   font-size: rem(16);
   line-height: normal;
   box-sizing: border-box;
-  transition: 0.3s;
+  transition: $duration;
 
   &:hover,
   &:focus {
