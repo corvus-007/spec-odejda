@@ -1,8 +1,6 @@
-// 1. Дублирую правили, потому что в IE и Edge не работает выпадашка при перечислении селекторов вместе с :focus-widthin
+// 1. Дублирую правила, потому что в IE и Edge не работает выпадашка при перечислении селекторов вместе с :focus-widthin
 
 .main-nav {
-  // background-color: $accent-color;
-  // background-color: #558b2f;
   background-color: #33691e;
 }
 
@@ -38,9 +36,12 @@
 }
 
 .main-nav__item {
+  position: relative;
+
   @include mq-min(768px) {
     flex-grow: 1;
     margin-right: 2.5%;
+    max-width: 250px;
 
     &:last-child {
       margin-right: 0;
@@ -136,8 +137,9 @@
 
   @include mq-min(768px) {
     position: absolute;
+    left: 0;
+    right: 0;
     z-index: 5;
-    min-width: 320px;
     transform: translateY(15px);
     pointer-events: none;
     opacity: 0;
