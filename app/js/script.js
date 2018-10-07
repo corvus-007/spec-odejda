@@ -47,20 +47,22 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  ymaps.ready(init);
+  if (window.ymaps !== undefined) {
+    ymaps.ready(init);
 
-  function init() {
-    var myMap = new ymaps.Map("contacts-map", {
-      center: [53.319025, 34.277377],
-      zoom: 17,
-    });
-    myMap.behaviors.disable('scrollZoom');
+    function init() {
+      var myMap = new ymaps.Map("contacts-map", {
+        center: [53.319025, 34.277377],
+        zoom: 17,
+      });
+      myMap.behaviors.disable('scrollZoom');
 
-    var myPlacemark = new ymaps.Placemark([53.319025, 34.277377], {
-      hintContent: "г. Брянск, улица Кромская 101, офисное здание, 3 этаж, офис 17",
-      // balloonContent: "Содержимое балуна"
-    });
+      var myPlacemark = new ymaps.Placemark([53.319025, 34.277377], {
+        hintContent: "г. Брянск, улица Кромская 101, офисное здание, 3 этаж, офис 17",
+        // balloonContent: "Содержимое балуна"
+      });
 
-    myMap.geoObjects.add(myPlacemark);
+      myMap.geoObjects.add(myPlacemark);
+    }
   }
 });
