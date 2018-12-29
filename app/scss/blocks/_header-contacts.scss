@@ -9,14 +9,16 @@
 .header-contacts__link {
   display: flex;
   align-items: center;
-  font-weight: 600;
+  font-weight: 700;
   font-size: rem(18);
+  letter-spacing: 0.025em;
   text-decoration: none;
-  color: $base-color;
+  color: $accent-color-3;
+  transition: $duration;
 
   &:hover,
   &:focus {
-    color: $accent-color-2;
+    color: #ffffff;
   }
 
   b {

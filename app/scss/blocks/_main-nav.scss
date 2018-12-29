@@ -1,7 +1,7 @@
 // 1. Дублирую правила, потому что в IE и Edge не работает выпадашка при перечислении селекторов вместе с :focus-widthin
 
 .main-nav {
-  background-color: #33691e;
+  background-color: #7cb342;
 }
 
 .main-nav__toggle {
@@ -32,19 +32,21 @@
 
   @include mq-min(768px) {
     display: flex;
+    justify-content: space-between;
   }
 }
 
 .main-nav__item {
   position: relative;
+  box-sizing: border-box;
 
   @include mq-min(768px) {
     flex-grow: 1;
-    margin-right: 2.5%;
-    max-width: 250px;
+    max-width: 300px;
 
     &:last-child {
       margin-right: 0;
+      padding-right: 0;
     }
   }
 }
@@ -56,7 +58,8 @@
   justify-content: center;
   padding: 10px 15px;
   font-weight: 600;
-  font-size: rem(18);
+  font-size: rem(21);
+  letter-spacing: 0.025em;
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;

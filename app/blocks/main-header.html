@@ -24,18 +24,103 @@
       </li>
     </ul>
     <form class="main-header__search header-search" action="index.html" method="get">
-      <input class="header-search__input input" type="search" name="s" placeholder="Поиск по сайту">
+      <input class="header-search__input input" type="search" name="s" placeholder="Поиск по сайту" autocomplete="off">
       <button class="header-search__submit" type="submit">
         <svg class="header-search__submit-icon" width="16" height="16">
           <use xlink:href="images/symbols.svg#magnify"></use>
         </svg>
         <span class="visually-hidden">Поиск</span>
       </button>
+      <div class="header-search__dropdown header-search__dropdown--showed autocomplete">
+        <ul class="autocomplete__list">
+          <li class="autocomplete__item autocomplete-product">
+            <a class="autocomplete-product__wraplink" href="product-page.html">
+              <div class="autocomplete-product__picture">
+                <img src="https://www.spets.ru/upload/resize_cache/iblock/a30/235_300_1d7a58ff99b324185ccb5ad5dfbdb5e85/bluza_tehasnew.png" alt="Блуза Восток">
+              </div>
+              <div class="autocomplete-product__body">
+                <span class="autocomplete-product__title">Блуза Восток</span>
+                <span class="autocomplete-product__vendor-code">ЛС 3218.01</span>
+                <div class="autocomplete-product__price product-price">
+                  <ins class="product-price__sum">
+                    <span class="product-price__value">1 799<span class="product-price__currency">руб.</span></span>
+                  </ins>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="autocomplete__item autocomplete-product">
+            <a class="autocomplete-product__wraplink" href="product-page.html">
+              <div class="autocomplete-product__picture">
+                <img src="https://www.spets.ru/upload/resize_cache/iblock/9b4/235_300_1d7a58ff99b324185ccb5ad5dfbdb5e85/bluza_vostok_belyy_3_4_rukav_new.png" alt="Блуза Артём">
+              </div>
+              <div class="autocomplete-product__body">
+                <span class="autocomplete-product__title">Блуза Артём</span>
+                <span class="autocomplete-product__vendor-code">ЛЛ 2223.ТЧ</span>
+                <div class="autocomplete-product__price product-price">
+                  <ins class="product-price__sum">
+                    <span class="product-price__value">1 560<span class="product-price__currency">руб.</span></span>
+                  </ins>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="autocomplete__item autocomplete-product">
+            <a class="autocomplete-product__wraplink" href="product-page.html">
+              <div class="autocomplete-product__picture">
+                <img src="https://www.spets.ru/upload/resize_cache/iblock/ebf/235_300_1d7a58ff99b324185ccb5ad5dfbdb5e85/bluza_zhenskaja_administrator.png" alt="Блуза женская Администратор">
+              </div>
+              <div class="autocomplete-product__body">
+                <span class="autocomplete-product__title">Блуза женская Администратор</span>
+                <span class="autocomplete-product__vendor-code">ЛЛ 2228.01</span>
+                <div class="autocomplete-product__price product-price">
+                  <span class="product-price__sum">Под заказ</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="autocomplete__item autocomplete-product">
+            <a class="autocomplete-product__wraplink" href="product-page.html">
+              <div class="autocomplete-product__picture">
+                <img src="https://www.spets.ru/upload/resize_cache/iblock/9bb/235_300_1d7a58ff99b324185ccb5ad5dfbdb5e85/bluza_lapki_new.jpg" alt="Блуза Лапки (пестрый принт)">
+              </div>
+              <div class="autocomplete-product__body">
+                <span class="autocomplete-product__title">Блуза Лапки (пестрый принт)</span>
+                <span class="autocomplete-product__vendor-code">ЛC 3233.1169</span>
+                <div class="autocomplete-product__price product-price">
+                  <ins class="product-price__sum">
+                    <span class="product-price__value">1 320<span class="product-price__currency">руб.</span></span>
+                  </ins>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="autocomplete__item autocomplete-product">
+            <a class="autocomplete-product__wraplink" href="product-page.html">
+              <div class="autocomplete-product__picture">
+                <img src="https://www.spets.ru/upload/resize_cache/iblock/d9a/235_300_1d7a58ff99b324185ccb5ad5dfbdb5e85/bluza_lodochka.png" alt="Блуза Лодочка (белая)">
+              </div>
+              <div class="autocomplete-product__body">
+                <span class="autocomplete-product__title">Блуза Лодочка (белая)</span>
+                <span class="autocomplete-product__vendor-code">ЛЛ 2226.01</span>
+                <div class="autocomplete-product__price product-price">
+                  <ins class="product-price__sum">
+                    <span class="product-price__value">1 548<span class="product-price__currency">руб.</span></span>
+                  </ins>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <div class="autocomplete__actions">
+          <a class="autocomplete__to-show-all button button--fill" href="">Показать все</a>
+        </div>
+      </div>
     </form>
     <div class="main-header__controls header-controls">
       <ul class="header-controls__item user-list">
         <li class="user-list__item">
-          <button class="user-list__button" type="button" title="Войти">
+          <button class="user-list__button" type="button" title="Войти" data-src="#popup-callback" data-fancybox>
             <svg class="user-list__icon" width="28" height="28">
               <use xlink:href="images/symbols.svg#account"></use>
             </svg>

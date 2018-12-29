@@ -11,19 +11,18 @@
 
 .user-list__button {
   padding: 10px;
+  color: $accent-color-3;
   background: none;
-  color: $base-color;
   border: none;
-  cursor: pointer;
   border-radius: $border-radius;
-  user-select: none;
-  outline: none;
   transition: $duration;
-  color: $base-color;
+  user-select: none;
+  cursor: pointer;
+  outline: none;
 
   &:hover,
   &:focus {
-    color: $accent-color-2;
+    color: #ffffff;
     background-color: rgba(#ffffff, 0.1);
   }
 }

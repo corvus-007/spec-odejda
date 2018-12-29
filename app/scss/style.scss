@@ -32,9 +32,12 @@
 @import "blocks/common-header";
 @import "blocks/common-title";
 @import "blocks/common-body";
+@import "blocks/product-price";
 // @import "blocks/custom-ol";
 // @import "blocks/custom-ul";
 @import "blocks/header-contacts";
+@import "blocks/autocomplete-product";
+@import "blocks/autocomplete";
 @import "blocks/header-search";
 @import "blocks/user-list";
 @import "blocks/cart-toggle";
@@ -51,7 +54,6 @@
 @import "blocks/category-cards";
 @import "blocks/category-card";
 @import "blocks/product-badges";
-@import "blocks/product-price";
 @import "blocks/product-cards";
 @import "blocks/product-card";
 @import "blocks/product-definition-list";

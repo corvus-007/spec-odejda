@@ -5,15 +5,15 @@
   font-weight: 800;
   font-size: rem(14);
   text-decoration: none;
+  color: $accent-color-3;
   border-radius: $border-radius;
-  outline: none;
-  user-select: none;
   transition: $duration;
-  color: $accent-color;
+  user-select: none;
+  outline: none;
 
   &:hover,
   &:focus {
-    color: $accent-color-2;
+    color: #ffffff;
     background-color: rgba(#ffffff, 0.1);
   }
 }

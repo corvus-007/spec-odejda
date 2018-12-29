@@ -1,0 +1,47 @@
+.autocomplete-product {
+  font-size: 18px;
+}
+
+.autocomplete-product__wraplink {
+  display: flex;
+  padding: 10px 5px;
+  text-decoration: none;
+  color: $base-color;
+  transition: $duration;
+
+  &:hover,
+  &:focus {
+    background-color: #fbfbfb;
+  }
+}
+
+.autocomplete-product__picture {
+  @include make-fit-object(1, 1, contain);
+
+  flex-shrink: 0;
+  width: 72px;
+  margin-right: 10px;
+}
+
+.autocomplete-product__body {
+  flex-grow: 1;
+}
+
+.autocomplete-product__title {
+  display: block;
+  margin: 0;
+  margin-bottom: 4px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.autocomplete-product__vendor-code {
+  display: block;
+  margin: 0;
+  font-size: 14px;
+  color: $muted-color;
+}
+
+.autocomplete-product__price {
+
+}

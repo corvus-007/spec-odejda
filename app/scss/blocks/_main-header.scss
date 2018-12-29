@@ -1,34 +1,51 @@
 .main-header {
   padding-top: 20px;
   padding-bottom: 20px;
-  // background-color: $accent-color;
-  // background-color: #0069cc;
-  // background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15));
+  background-color: #194066;
 }
 
 .main-header__inner {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
+
+  @include mq-min(768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .main-header__logo {
-  min-width: 100px;
   flex-shrink: 0;
-}
+  min-width: 100px;
+  margin-bottom: 20px;
 
-.main-header__logo {
-  margin-right: auto;
+  @include mq-min(768px) {
+    margin-right: auto;
+    margin-bottom: 0;
+  }
 }
 
 .main-header__contacts {
-  margin-left: $gutter * 2;
-  margin-right: $gutter * 2;
+  margin-bottom: 20px;
+
+  @include mq-min(768px) {
+    margin-left: $gutter * 2;
+    margin-right: $gutter * 2;
+    margin-bottom: 0;
+  }
 }
 
 .main-header__search {
-  margin-right: $gutter * 2;
+  margin-bottom: 20px;
+  width: 100%;
+
+  @include mq-min(768px) {
+    width: auto;
+    margin-right: $gutter * 2;
+    margin-bottom: 0;
+  }
 }
 
 .main-header__controls {
