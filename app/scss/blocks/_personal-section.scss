@@ -1,0 +1,43 @@
+.personal-section {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: $border-radius;
+}
+
+.personal-section__header {
+  padding: 15px;
+  background-color: #eaeaea;
+}
+
+.personal-section__content {
+  flex-grow: 1;
+  padding: 15px;
+  color: #9a9a9a;
+}
+
+.personal-section__title {
+  margin: 0;
+  font-size: 24px;
+}
+
+.personal-section__footer {
+  padding: 15px;
+}
+
+.personal-section__actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.personal-section__action {
+  text-decoration: none;
+  border-bottom: 1px solid rgba($accent-color, 0.25);
+  transition: $duration;
+
+  &:hover,
+  &:focus {
+    border-bottom-color: $accent-color;
+  }
+}

@@ -1,0 +1,47 @@
+.orders-list {
+
+}
+
+.orders-list__item {
+  a {
+    text-decoration: none;
+    border-bottom: 1px solid rgba($accent-color, 0.25);
+    transition: $duration;
+
+    &:hover,
+    &:focus {
+      border-bottom-color: $accent-color;
+    }
+  }
+}
+
+.orders-list__status {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 8px;
+  vertical-align: baseline;
+  border: 1.5px solid;
+  border-radius: 50%;
+  cursor: help;
+
+  &--canceled { // отменен
+    background-color: $danger-color;
+    border-color: darken($danger-color, 10%);
+  }
+
+  &--ready { // готов
+    background-color: $warning-color;
+    border-color: darken($warning-color, 10%);
+  }
+
+  &--complete { // завершен
+    background-color: $success-color;
+    border-color: darken($success-color, 10%);
+  }
+
+  &--pending { // в ожидании
+    background-color: $muted-color;
+    border-color: darken($muted-color, 10%);
+  }
+}

@@ -1,0 +1,22 @@
+.profile-cabinet-form {
+
+  @include mq-min(768px) {
+    max-width: 600px;
+  }
+}
+
+.profile-cabinet-form__actions {
+  @include mq-min(568px) {
+
+  }
+}
+
+.profile-cabinet-form__actions-item {
+  margin-bottom: 15px;
+
+  @include mq-min(568px) {
+    @include calc-column-width(2);
+
+    margin-bottom: 0;
+  }
+}

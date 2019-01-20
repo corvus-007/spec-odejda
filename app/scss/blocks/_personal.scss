@@ -1,0 +1,17 @@
+.personal {
+
+}
+
+.personal__title {
+  margin-bottom: 25px;
+  border-bottom: none;
+}
+
+.personal__grid {
+  display: grid;
+  grid-gap: $gutter;
+
+  @include mq-min(480px) {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
+}

@@ -17,10 +17,14 @@
 .form-actions {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 15px;
+  margin-top: 25px;
   margin-bottom: 15px;
 
   &--justify-center {
     justify-content: center;
   }
+}
+
+.form-actions__spacer {
+  flex-grow: 1;
 }

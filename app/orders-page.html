@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>История заказов — Спец_Одежда</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="site-wrapper">
+    @@include('blocks/main-header.html')
+    @@include('blocks/main-nav.html')
+
+    <div class="main-layout container">
+      <div class="main-layout__row">
+        <ul class="main-layout__breadcrumbs breadcrumbs">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="cabinet-page.html">Мой кабинет</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link">История заказов</a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-layout__row">
+        <main class="main-layout__main main-content">
+          <article class="main-content__section personal">
+            <h1>История заказов</h1>
+            <div class="personal__grid">
+              <section class="personal__grid-item personal-section">
+                <div class="personal-section__header">
+                  <h2 class="personal-section__title">История заказов</h2>
+                </div>
+                <div class="personal-section__content orders-history" data-orders-history>
+                  <ul class="personal-common-list orders-list orders-history__list">
+                    <li class="orders-list__item">
+                      <span class="orders-list__status"></span>Заказ <b><a href="#order-detail-popup" data-fancybox>#9311</a></b>,
+                      34 товара на 40227
+                      руб.
+                    </li>
+                    <li class="orders-list__item">
+                      <span class="orders-list__status orders-list__status--canceled" title="Отменен"></span>Заказ <b><a
+                          href="#order-detail-popup" data-fancybox>#9311</a></b>, 34 товара на 40227 руб.
+                    </li>
+                    <li class="orders-list__item">
+                      <span class="orders-list__status orders-list__status--ready" title="Готов"></span>Заказ <b><a
+                          href="#order-detail-popup" data-fancybox>#9311</a></b>,
+                      34 товара на 40227 руб.
+                    </li>
+                    <li class="orders-list__item">
+                      <span class="orders-list__status orders-list__status--complete" title="Завершен"></span>Заказ <b><a
+                          href="#order-detail-popup" data-fancybox>#9311</a></b>, 34 товара на 40227 руб.
+                    </li>
+                    <li class="orders-list__item">
+                      <span class="orders-list__status orders-list__status--pending" title="В ожидании"></span>Заказ <b><a
+                          href="#order-detail-popup" data-fancybox>#9311</a></b>, 34 товара на 40227 руб.
+                    </li>
+                  </ul>
+                  <button class="orders-history__to-get-orders" type="button">Загрузить еще 10 зказаов</button>
+                </div>
+              </section>
+            </div>
+          </article>
+        </main>
+      </div>
+    </div>
+
+    @@include('blocks/main-footer.html')
+    @@include('blocks/enter-popup.html')
+    @@include('blocks/order-detail-popup.html')
+  </div>
+  @@include('blocks/site-scripts.html')
+</body>
+
+</html>

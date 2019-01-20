@@ -6,7 +6,11 @@ document.addEventListener('DOMContentLoaded', function () {
   $('[data-fancybox]').fancybox({
     buttons: [
       'close'
-    ]
+    ],
+    touch: {
+      vertical: false,
+      momentum: false
+    }
   });
   $.fancybox.defaults.animationEffect = "zoom";
 
