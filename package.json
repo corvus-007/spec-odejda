@@ -28,8 +28,11 @@
     "@fancyapps/fancybox": "^3.3.5",
     "accordionjs": "^2.1.1",
     "flatpickr": "^4.5.0",
+    "nouislider": "^12.1.0",
     "svg4everybody": "^2.1.9",
     "tabslet": "^1.7.3",
-    "tippy.js": "^2.5.2"
+    "tippy.js": "^2.5.2",
+    "url-search-params": "^1.1.0",
+    "wnumb": "^1.1.0"
   }
 }

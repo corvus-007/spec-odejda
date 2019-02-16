@@ -18,6 +18,9 @@ document.addEventListener('DOMContentLoaded', function () {
   $('.product-detail-tabs').tabslet();
 
   $('.product-detail-accordion').accordionjs();
+  $('[data-filter-accordion]').accordionjs({
+    closeOther: false,
+  });
 
   tippy('[title]', {
     // size: 'small'
@@ -68,5 +71,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
       myMap.geoObjects.add(myPlacemark);
     }
+  }
+
+  var filters = document.querySelector('.filters');
+
+  if (filters) {
+    window.productsFilters.init();
   }
 });

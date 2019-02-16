@@ -13,6 +13,12 @@
   box-sizing: border-box;
   transition: $duration;
 
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    appearance: none;
+    margin: 0;
+  }
+
   &:hover,
   &:focus {
     border-color: darken($light-color, 10%);

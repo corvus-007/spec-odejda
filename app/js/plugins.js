@@ -5,3 +5,6 @@
 //=require ../../node_modules/accordionjs/accordion.min.js
 //=require ../../node_modules/flatpickr/dist/flatpickr.min.js
 //=require ../../node_modules/flatpickr/dist/l10n/ru.js
+//=require ../../node_modules/url-search-params/build/url-search-params.js
+////=require ../../node_modules/wnumb/wNumb.js
+//=require ../../node_modules/nouislider/distribute/nouislider.min.js

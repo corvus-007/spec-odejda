@@ -13,6 +13,7 @@
 @import "../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox";
 @import "../../node_modules/tippy.js/dist/tippy";
 @import "../../node_modules/flatpickr/dist/flatpickr";
+@import "../../node_modules/nouislider/distribute/nouislider";
 
 // Blocks
 @import "blocks/site-wrapper";
@@ -26,6 +27,7 @@
 @import "blocks/counter";
 @import "blocks/table";
 @import "blocks/popup";
+@import "blocks/accordion";
 @import "blocks/order-detail-popup";
 @import "blocks/breadcrumbs";
 @import "blocks/common-section";
@@ -92,5 +94,10 @@
 @import "blocks/register-form";
 @import "blocks/materials-and-techology-nav";
 @import "blocks/footer-contacts";
+@import "blocks/filter-range-slider";
+@import "blocks/filter-checkbox";
+@import "blocks/filter-range";
+@import "blocks/filters-form";
+@import "blocks/filters";
 @import "blocks/socials";
 @import "blocks/main-footer";

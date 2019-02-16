@@ -1,0 +1,17 @@
+.filter-checkbox {
+  display: inline-flex;
+  align-items: baseline;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+
+  input {
+
+  }
+
+  span {
+    position: relative;
+    top: -2px;
+    margin-left: 4px;
+  }
+}

@@ -247,6 +247,120 @@
     </ul>
   </div>
   <div class="sidebar__module common-block filters">
-    Фильтр
+    <form action="/" class="filters__form filters-form">
+      <ul class="filters__accrodion accordion" data-filter-accordion>
+        <li class="accordion__section">
+          <div class="accordion__caption">Цена</div>
+          <div class="accordion__content">
+            <div class="filter-range">
+              <div class="filter-range__fields-group">
+                <label>
+                  От
+                  <input class="input" type="number" name="filterPriceFrom" value="20" data-range-from>
+                </label>
+                <label>
+                  до
+                  <input class="input" type="number" name="filterPriceTo" value="150" data-range-to>
+                </label>
+              </div>
+              <div class="filter-range-slider" data-type-slider="price" data-range="[20, 150]"></div>
+            </div>
+          </div>
+        </li>
+        <li class="accordion__section">
+          <div class="accordion__caption">Вид изделия</div>
+          <div class="accordion__content">
+            <ul class="filters-form__boxes-group">
+              <li>
+                <label class="filter-checkbox">
+                  <input type="checkbox" name="" id="">
+                  <span>Костюм</span>
+                </label>
+              </li>
+              <li>
+                <label class="filter-checkbox">
+                  <input type="checkbox" name="" id="">
+                  <span>Жилет</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="accordion__section">
+          <div class="accordion__caption">Комплектность</div>
+          <div class="accordion__content">
+            <ul class="filters-form__boxes-group">
+              <li>
+                <label class="filter-checkbox">
+                  <input type="checkbox" name="" id="">
+                  <span>Куртка и полукомбенизон</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="accordion__section">
+          <div class="accordion__caption">Назначение</div>
+          <div class="accordion__content">
+            <ul class="filters-form__boxes-group">
+              <li>
+                <label class="filter-checkbox">
+                  <input type="checkbox" name="" id="">
+                  <span>для защиты от пониженных температур</span>
+                </label>
+              </li>
+              <li>
+                <label class="filter-checkbox">
+                  <input type="checkbox" name="" id="">
+                  <span>сигнальный</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="accordion__section">
+          <div class="accordion__caption">Основной цвет</div>
+          <div class="accordion__content">
+            <ul class="filters-form__boxes-group">
+              <li>
+                <label class="filter-checkbox">
+                  <input type="checkbox" name="" id="">
+                  <span>лимонный</span>
+                </label>
+              </li>
+              <li>
+                <label class="filter-checkbox">
+                  <input type="checkbox" name="" id="">
+                  <span>оранжевый</span>
+                </label>
+              </li>
+              <li>
+                <label class="filter-checkbox">
+                  <input type="checkbox" name="" id="">
+                  <span>флуоресцентный желтый</span>
+                </label>
+              </li>
+              <li>
+                <label class="filter-checkbox">
+                  <input type="checkbox" name="" id="">
+                  <span>флуоресцентный оранжевый</span>
+                </label>
+              </li>
+              <li>
+                <label class="filter-checkbox">
+                  <input type="checkbox" name="" id="">
+                  <span>черный</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <div class="form-actions filters__actions">
+        <button class="button button--fill" type="submit">Применить</button>
+        <span class="form-actions__spacer"></span>
+        <button class="button butt" type="reset">Сбросить</button>
+      </div>
+    </form>
   </div>
 </aside>

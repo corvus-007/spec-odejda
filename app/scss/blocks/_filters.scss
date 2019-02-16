@@ -1,0 +1,17 @@
+.filters {
+  padding: $gutter / 2;
+}
+
+.filters__accrodion {
+  margin-bottom: 25px;
+
+  .accordion__section {
+    &:first-child {
+      border-top: none;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
